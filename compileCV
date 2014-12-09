@@ -1,0 +1,3 @@
+#!/bin/sh
+g++ -Wall facedetector.cpp -o facer -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_objdetect -lopencv_video
+# sudo apt-get install libopencv-dev
