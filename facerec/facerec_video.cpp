@@ -116,29 +116,15 @@ static int add_user(const char* userName, string fn_lbp, int deviceId){
 }
 
 int main(int argc, const char *argv[]) {
-    // Check for valid command line arguments, print usage
-    // if no arguments were given.
-    // if (argc != 4) {
-    //     cout << "usage: " << argv[0] << " </path/to/lbp_cascade> </path/to/csv.ext> </path/to/device id>" << endl;
-    //     cout << "\t </path/to/lbp_cascade> -- Path to the Local Binary Pattern Cascade for face detection." << endl;
-    //     cout << "\t </path/to/csv.ext> -- Path to the CSV file with the face database." << endl;
-    //     cout << "\t <device id> -- The webcam device id to grab frames from." << endl;
-    //     exit(1);
-    // }
-    // Get the path to your CSV:
-    // string fn_haar = string(argv[1]);
-    // string fn_lbp = string(argv[1]);
-    // string fn_csv = string(argv[2]);
-    // int deviceId = atoi(argv[3]);
     string fn_lbp = string("lbpcascades/lbpcascade_frontalface.xml");
     string fn_csv = string("faces.csv");
     int deviceId = atoi("video0");
     // map<int, string> users;
-    char nU = 'n';
+    char newUseCh = 'n';
     printf("Add new user? (y/n): ");
-    scanf(" %c",&nU);
+    scanf(" %c",&newUseCh);
 
-    if(nU=='y'){
+    if(newUseCh=='y'){
         char newUser[100];
         printf("Username: ");
         scanf("%s",newUser);
