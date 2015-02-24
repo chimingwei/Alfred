@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Alfred</title>
+
+<link rel= "stylesheet" href="test1.css">
+
+<script src="jquery-1.11.2.min.js"></script>
+<script src="test.js"></script>
+<!--<script src="data.json">
+obj = JSON.parse(text);
+document.getElementById("cards").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script> -->
+
+
+</head>
+
+<body onload = "swirl()">
+<h1>Alfred</h1>
+<h2>The Smart Mirror</h2>
+
+<!-- <script type="text/javascript">
+    
+    $.getJSON('data.json', function(data){
+    alert("This is the Data" + items["1.summary"])});
+</script> -->
+
+<!--
+<script>
+$(function swirl(){
+$(".cards").toggleClass("flip");
+});
+
+$(function swirl(){
+$(".cards2").toggleClass("flip2");
+});
+
+$(function swirl(){
+$(".cards3").toggleClass("flip3");
+});
+
+$(function swirl(){
+$(".cards4").toggleClass("flip4");
+});
+</script>
+
+-->
+
+<div class="cards">
+<h2>London</h2>
+<p id="info"></p>
+
+<script src="data.json">
+obj = JSON.parse(calData);
+document.getElementById("info").innerHTML =
+obj.items[1].status + " " + obj.items[1].kind;
+</script>
+
+</div>
+
+<div class="cards2">
+<h2>Paris</h2>
+<p id="demo"></p>
+<script>
+var text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+</div>
+
+<div class="cards3">
+<h2>Tokyo</h2>
+<p>Items on the Machine are as follows:
+Weather
+Calender
+Notes/Reminders
+Facebook
+Skype</p>
+</div>
+
+<div class="cards4"></div>
+
+<div id="mainB">
+  <div class="bg">
+     <div class="bg1">
+
+     </div>
+  </div>
+</div>
+<div class="over">
+  <div class="dial">
+    <div class="grad">
+        
+    </div>
+  </div>
+  <div class="container">
+  <div class="nav">
+    <ul id="nav">
+      <li id="email">
+        <a>
+          <img src="iemail.png" />
+        </a>
+      </li>
+      <li id="skype">
+        <a>
+          <img src="iphoto.png" />
+        </a>
+      </li>
+      <li id="cloud" class="active">
+        <a>
+          <img src="icloud.png" />
+        </a>
+      </li>
+      <li id="portfolio">
+        <a>
+          <img src="portfolio.png" />
+        </a>
+      </li>
+      <li id="settings">
+        <a>
+          <img src="settings.png" />
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+<!-- 
+
+<nav class="circular-menu">
+
+  <div class="circle">
+  
+    <a href="" class="fa fa-home fa-2x"></a>
+    <a href="http://www.facebook.com" class="fa fa-facebook fa-2x"></a>
+    <a href="" class="fa fa-twitter fa-2x"></a>
+    <a href="" class="fa fa-linkedin fa-2x"></a>
+    <a href="" class="fa fa-github fa-2x"></a>
+    <a href="" class="fa fa-rss fa-2x"></a>
+    <a href="" class="fa fa-pinterest fa-2x"></a>
+    <a href="" class="fa fa-asterisk fa-2x"></a>
+  </div>
+  
+  <a href="" class="menu-button fa fa-bars fa-2x"></a>
+
+</nav>
+-->
+
+
+
+</body>
+</html>

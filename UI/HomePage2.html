@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Alfred</title>
+
+<link rel= "stylesheet" href="alfred.css">
+
+<script src="jquery-1.11.2.min.js"></script>
+<script src="rmenu.js"></script>
+
+
+</head>
+
+<body onload = "swirl()">
+<h1>Alfred</h1>
+<h2>Created by: Taylor, Justin, Connor, Diane kind of helped</h2>
+
+<script>
+$(function swirl(){
+$(".cards3").toggleClass("flip3");
+});
+</script>
+
+<button class='btn' id='menu_button' >Menu</button>
+<div id='menu'>
+	<ul>
+		<li class='has-sub'> <a class = "testbutton" id="userButton" onclick="dropdown()" href ="#">
+				<span id="buttonText">User name</span><span id ="triangleDown">&#9662;</span>
+				
+						</a>
+				<ul id="submenu">
+					<li class='has-sub'><a href = '#'>
+					<span>Change password</span></a>
+					</li>
+					<li class= 'has-sub'><a href = 'logout.php?action=0'><span>Logout</span></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+
+<!--
+<div class="menuItem">
+<h2>Paris</h2>
+<p>FOX</p>
+</div> 
+
+<div class="menuItemTwo">
+<a href = "http://www.cnn.com"> <h2>CNN</h2> </a>
+</div>
+-->
+
+<div class="cards">
+<h2>London</h2>
+<p>BBC</p>
+</div>
+
+<div class="cards2">
+<h2>Paris</h2>
+<p>FOX</p>
+</div>
+
+<div class="cards3">
+<h2>Tokyo</h2>
+<p>MSNBC</p>
+</div>
+
+<div class="cards4"></div>
+
+
+
+<nav class="circular-menu">
+
+  <div class="circle">
+  
+    <a href="" class="fa fa-home fa-2x"></a>
+    <a href="http://www.facebook.com" class="fa fa-facebook fa-2x"></a>
+    <a href="" class="fa fa-twitter fa-2x"></a>
+    <a href="" class="fa fa-linkedin fa-2x"></a>
+    <a href="" class="fa fa-github fa-2x"></a>
+    <a href="" class="fa fa-rss fa-2x"></a>
+    <a href="" class="fa fa-pinterest fa-2x"></a>
+    <a href="" class="fa fa-asterisk fa-2x"></a>
+  </div>
+  
+  <a href="" class="menu-button fa fa-bars fa-2x"></a>
+
+</nav>
+
+
+
+
+</body>
+</html>

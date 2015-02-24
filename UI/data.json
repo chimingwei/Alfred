@@ -1,0 +1,1950 @@
+{
+  "kind": "calendar#events",
+  "defaultReminders": [
+    {
+      "minutes": 10,
+      "method": "popup"
+    }
+  ],
+  "items": [
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-07-07T11:00:00-06:00"
+      },
+      "created": "2014-07-07T04:39:30.000Z",
+      "iCalUID": "3A7A0CF7-DB2A-4396-B9E6-D15359D06A26",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZkMGplZzlnOGQzM2ViYTQ4OHA0MmI5azZjc2pjYmEyNzUyamNiYTQ2NHFqNmQ5cDhnbzNjZzlpNm8gcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 2,
+      "updated": "2014-07-07T15:51:58.740Z",
+      "summary": "Test",
+      "start": {
+        "dateTime": "2014-07-07T10:00:00-06:00"
+      },
+      "etag": "\"2809496637480000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6d0jeg9g8d33eba488p42b9k6csjcba2752jcba464qj6d9p8go3cg9i6o",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6d0jeg9g8d33eba488p42b9k6csjcba2752jcba464qj6d9p8go3cg9i6o"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-08-06T11:00:00-06:00"
+      },
+      "created": "2014-08-05T21:59:23.000Z",
+      "iCalUID": "3EACDB28-8ED9-4756-8D00-9261966C4EFC",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZkMmsyZ3E0ODhwM2diOW84bDIzaWI5azZzcWpjYjlvOGdvMzBiOXA2OHIzMmU5bTZwMWo4aGE2OGMgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-08-06T16:10:08.065Z",
+      "summary": "GSX Hideo",
+      "start": {
+        "dateTime": "2014-08-06T10:00:00-06:00"
+      },
+      "etag": "\"2814682816012000\"",
+      "location": "OIT",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6d2k2gq488p3gb9o8l23ib9k6sqjcb9o8go30b9p68r32e9m6p1j8ha68c",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6d2k2gq488p3gb9o8l23ib9k6sqjcb9o8go30b9p68r32e9m6p1j8ha68c"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "date": "2014-08-26"
+      },
+      "created": "2014-08-06T04:38:36.000Z",
+      "iCalUID": "899B815F-67B4-48F8-8F38-51211C19C1F8",
+      "reminders": {
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=Xzcwc2ppZ2hvNjRxa2NiOW02dDEzOGI5azcxMzNnYjlvOG9wamdiOWw2NHAzMmNhMzY0c2s2Y2E2NzAgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-08-24T21:49:10.896Z",
+      "summary": "First Day of School",
+      "start": {
+        "date": "2014-08-25"
+      },
+      "etag": "\"2816216867045000\"",
+      "location": "CU Boulder",
+      "transparency": "transparent",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_70sjigho64qkcb9m6t138b9k7133gb9o8opjgb9l64p32ca364sk6ca670",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._70sjigho64qkcb9m6t138b9k7133gb9o8opjgb9l64p32ca364sk6ca670"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-11-12T10:50:00-07:00"
+      },
+      "created": "2014-08-25T16:07:51.000Z",
+      "iCalUID": "729CB454-8CC6-4635-87E6-E0BB887E75E0",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZzcDNpZ3EyNmdxajhiOW84ZDFqY2I5azZvcGphYjlvNnQyamNiYTU2MTE0NGUxbzZ0MmplZGE1NjAgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-08-25T16:07:51.387Z",
+      "summary": "Quz",
+      "start": {
+        "dateTime": "2014-11-12T10:00:00-07:00"
+      },
+      "etag": "\"2817965742774000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6sp3igq26gqj8b9o8d1jcb9k6opjab9o6t2jcba561144e1o6t2jeda560",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6sp3igq26gqj8b9o8d1jcb9k6opjab9o6t2jcba561144e1o6t2jeda560"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-03T10:50:00-07:00"
+      },
+      "created": "2014-08-25T16:08:23.000Z",
+      "iCalUID": "85E19843-0574-43AE-89E5-0430780D4C81",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzcwcWthYzlwNzBxMzZiOWc2a3JqOGI5azZkMGthYjlvNzUyamFiOWc2Z3BqMGRwbzYxMjM4Z3BvNjQgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-08-25T16:08:23.893Z",
+      "summary": "Quiz",
+      "start": {
+        "dateTime": "2014-12-03T10:00:00-07:00"
+      },
+      "etag": "\"2817965807716000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_70qkac9p70q36b9g6krj8b9k6d0kab9o752jab9g6gpj0dpo61238gpo64",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._70qkac9p70q36b9g6krj8b9k6d0kab9o752jab9g6gpj0dpo61238gpo64"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-11-10T14:00:00-07:00"
+      },
+      "created": "2014-10-24T19:06:23.000Z",
+      "iCalUID": "1CF45A05-C4CA-4D7D-929B-4E91687BC4A4",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 2880,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzY1MWtjZDFsODRvM2FiYTM2aDFrMmI5azhncms4YjlwNjhzazRiOWs4a3NqMmRobzZ0MTQ2ZDIxNmcgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-10-24T19:06:24.727Z",
+      "summary": "Controls Exam",
+      "start": {
+        "dateTime": "2014-11-10T13:00:00-07:00"
+      },
+      "etag": "\"2828614364945000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_651kcd1l84o3aba36h1k2b9k8grk8b9p68sk4b9k8ksj2dho6t146d216g",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._651kcd1l84o3aba36h1k2b9k8grk8b9p68sk4b9k8ksj2dho6t146d216g"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-10-08T10:50:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T16:07:06.000Z",
+      "iCalUID": "ECA84BF7-0F38-4349-A770-11F2E987D449",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 10080,
+            "method": "popup"
+          },
+          {
+            "minutes": 2880,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhsMWsyZTFrODkzM2ViOWc4b3BqZ2I5azZjcTNpYmExNnNyajBiOWg2NTMzNGg5cDcwcms4ZDFrNzQgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-11-17T20:07:59.036Z",
+      "summary": "Quiz",
+      "start": {
+        "dateTime": "2014-10-08T10:00:00-06:00"
+      },
+      "etag": "\"2832509757982000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8l1k2e1k8933eb9g8opjgb9k6cq3iba16srj0b9h65334h9p70rk8d1k74",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8l1k2e1k8933eb9g8opjgb9k6cq3iba16srj0b9h65334h9p70rk8d1k74"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-10-08T14:50:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:00.000Z",
+      "iCalUID": "F6418850-55AB-4CDF-9C75-459A3E71FE4D",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 10,
+            "method": "popup"
+          },
+          {
+            "minutes": 0,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhvcjM4YzlvNzBxajBiOWw2bDBrNGI5azhkMjRjYjlwOGNyamFiOWs2a3NrMmNxNTZzb2tjaDlrOGdfMjAxNDEwMDhUMjAwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-11-17T20:08:00.630Z",
+      "summary": "Probability",
+      "start": {
+        "dateTime": "2014-10-08T14:00:00-06:00"
+      },
+      "etag": "\"2829054363101000\"",
+      "originalStartTime": {
+        "dateTime": "2014-10-08T14:00:00-06:00"
+      },
+      "recurringEventId": "_8or38c9o70qj0b9l6l0k4b9k8d24cb9p8crjab9k6ksk2cq56sokch9k8g",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8or38c9o70qj0b9l6l0k4b9k8d24cb9p8crjab9k6ksk2cq56sokch9k8g_20141008T200000Z",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8or38c9o70qj0b9l6l0k4b9k8d24cb9p8crjab9k6ksk2cq56sokch9k8g"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-10-08T10:50:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:06.000Z",
+      "iCalUID": "EBD77719-9822-4B43-A173-186447BCC23E",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhsMTQ4ZHBuNnNvamliOXA3MHAzNGI5azg4cTM2YmExNjRyajZiOWg3MHIzOGQxbjg5MWs2Y2hqOGtfMjAxNDEwMDhUMTYwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-11-17T20:08:07.530Z",
+      "summary": "Digital Filter Design",
+      "start": {
+        "dateTime": "2014-10-08T10:00:00-06:00"
+      },
+      "etag": "\"2829037177777000\"",
+      "originalStartTime": {
+        "dateTime": "2014-10-08T10:00:00-06:00"
+      },
+      "recurringEventId": "_8l148dpn6sojib9p70p34b9k88q36ba164rj6b9h70r38d1n891k6chj8k",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8l148dpn6sojib9p70p34b9k88q36ba164rj6b9h70r38d1n891k6chj8k_20141008T160000Z",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8l148dpn6sojib9p70p34b9k88q36ba164rj6b9h70r38d1n891k6chj8k"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-10-09T11:45:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:06.000Z",
+      "iCalUID": "87003313-D62E-459C-9FDE-75D287C5B974",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzcwcmowYzFqNmNvajZiYTQ2b3A0YWI5azZrc2s2YjlwOHAyNGFiOW42bDIzNGUxbjhjcWs0ZTluNmdfMjAxNDEwMDlUMTUwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-11-17T20:08:08.291Z",
+      "summary": "Capstone Lab",
+      "start": {
+        "dateTime": "2014-10-09T09:00:00-06:00"
+      },
+      "etag": "\"2834323611146000\"",
+      "originalStartTime": {
+        "dateTime": "2014-10-09T09:00:00-06:00"
+      },
+      "recurringEventId": "_70rj0c1j6coj6ba46op4ab9k6ksk6b9p8p24ab9n6l234e1n8cqk4e9n6g",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_70rj0c1j6coj6ba46op4ab9k6ksk6b9p8p24ab9n6l234e1n8cqk4e9n6g_20141009T150000Z",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._70rj0c1j6coj6ba46op4ab9k6ksk6b9p8p24ab9n6l234e1n8cqk4e9n6g"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-01T17:00:00-07:00"
+      },
+      "created": "2014-12-01T15:40:29.000Z",
+      "iCalUID": "488A7031-F69C-49D9-9E82-03D28C1A773F",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZnczNnZzluNjBwajJiYTY2b3NrNmI5azc1MjNpYjlwOGtzMzRiOWc2ZDIzNGUyMzY1MGplZHBqOG8gcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-01T15:40:29.255Z",
+      "summary": "Meet with Capstone Group",
+      "start": {
+        "dateTime": "2014-12-01T16:00:00-07:00"
+      },
+      "etag": "\"2834896858510000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6gs3gg9n60pj2ba66osk6b9k7523ib9p8ks34b9g6d234e23650jedpj8o",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6gs3gg9n60pj2ba66osk6b9k7523ib9p8ks34b9g6d234e23650jedpj8o"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-02T12:00:00-07:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:09.000Z",
+      "iCalUID": "EF776ABC-2A4E-4FCB-927B-A083C3F2CCED",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhsMzNlZHBtODUxNDZiOWk4NHE0YWI5azhwMWs0YjlwNjhyazRiYTE2MHMzNmdwajhvcDQ2Z3E1OGdfMjAxNDEyMDJUMTYwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-01T15:40:53.875Z",
+      "summary": "Capstone Lab",
+      "start": {
+        "dateTime": "2014-12-02T09:00:00-07:00"
+      },
+      "etag": "\"2834896898809000\"",
+      "originalStartTime": {
+        "dateTime": "2014-12-02T09:00:00-07:00"
+      },
+      "recurringEventId": "_8l33edpm85146b9i84q4ab9k8p1k4b9p68rk4ba160s36gpj8op46gq58g",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8l33edpm85146b9i84q4ab9k8p1k4b9p68rk4ba160s36gpj8op46gq58g_20141202T160000Z",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8l33edpm85146b9i84q4ab9k8p1k4b9p68rk4ba160s36gpj8op46gq58g"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-02T16:00:00-07:00"
+      },
+      "created": "2014-12-01T15:41:01.000Z",
+      "iCalUID": "E6545721-52D6-48CB-A6E6-C0B6E7C87DD8",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhrcjNhZDFsNnNwMzJiOWw2OTIzY2I5azcxMWs0YmExNnAyamNiYTM2MTEzY2g5bjhjczNlaDI0NzAgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-01T15:41:07.146Z",
+      "summary": "Study DSP",
+      "start": {
+        "dateTime": "2014-12-02T12:15:00-07:00"
+      },
+      "etag": "\"2834896934292000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8kr3ad1l6sp32b9l6923cb9k711k4ba16p2jcba36113ch9n8cs3eh2470",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8kr3ad1l6sp32b9l6923cb9k711k4ba16p2jcba36113ch9n8cs3eh2470"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-01T14:00:00-07:00"
+      },
+      "created": "2014-12-01T15:41:22.000Z",
+      "iCalUID": "086EAAE3-DDC3-425F-8E61-0E29C60ED7B7",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzYwczNjaGExODUyajZiYTQ4aDFqNmI5azY4cWtjYjlvOGtyMzJiOWc4a3AzaWdwbTYxMms4ZHEyNnMgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-01T15:41:25.636Z",
+      "summary": "Exam",
+      "start": {
+        "dateTime": "2014-12-01T13:00:00-07:00"
+      },
+      "etag": "\"2834896971272000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_60s3cha1852j6ba48h1j6b9k68qkcb9o8kr32b9g8kp3igpm612k8dq26s",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._60s3cha1852j6ba48h1j6b9k68qkcb9o8kr32b9g8kp3igpm612k8dq26s"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-16T13:00:00-07:00"
+      },
+      "created": "2014-12-10T20:30:06.000Z",
+      "iCalUID": "582FFE0A-E9EA-4D67-8CA8-A35F9D45B123",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZrczM0aGk2OGtvNDJiYTU3NTJrMmI5azhncjNlYjlvOGQwamdiYTE2Y3FrY2VhNDZncWs0YzlpNmMgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-10T20:30:06.827Z",
+      "summary": "Digital Filter Final",
+      "start": {
+        "dateTime": "2014-12-16T10:30:00-07:00"
+      },
+      "etag": "\"2836486813654000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6ks34hi68ko42ba5752k2b9k8gr3eb9o8d0jgba16cqkcea46gqk4c9i6c",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6ks34hi68ko42ba5752k2b9k8gr3eb9o8d0jgba16cqkcea46gqk4c9i6c"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-17T13:00:00-07:00"
+      },
+      "created": "2014-08-25T16:09:40.000Z",
+      "iCalUID": "B7105C04-681C-4676-B650-80998E6BCAC8",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=Xzg4cmoyYzFsOGNvMzhiOW03MG9rNmI5azZvcmpjYmEyNm9xajBiOW82MHNqaWUyNTZwMTQ2Z2EzNzAgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-10T20:30:19.072Z",
+      "summary": "Controls Final",
+      "start": {
+        "dateTime": "2014-12-17T10:30:00-07:00"
+      },
+      "etag": "\"2836486838144000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_88rj2c1l8co38b9m70ok6b9k6orjcba26oqj0b9o60sjie256p146ga370",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._88rj2c1l8co38b9m70ok6b9k6orjcba26oqj0b9o60sjie256p146ga370"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-17T22:00:00-07:00"
+      },
+      "created": "2014-12-10T20:30:54.000Z",
+      "iCalUID": "7F4D84BB-5FA7-4C5A-A4A9-7851636C4482",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZ0MzM4aDFvNmgxNDRiOWw4cDBqZWI5azhjcWsyYmExNmgwamliOW43MHFqMmRoajZwMWo4ZDFvNjggcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-10T20:30:54.821Z",
+      "summary": "Probability Final",
+      "start": {
+        "dateTime": "2014-12-17T19:30:00-07:00"
+      },
+      "etag": "\"2836486909642000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6t338h1o6h144b9l8p0jeb9k8cqk2ba16h0jib9n70qj2dhj6p1j8d1o68",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6t338h1o6h144b9l8p0jeb9k8cqk2ba16h0jib9n70qj2dhj6p1j8d1o68"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-09T12:15:00-07:00"
+      },
+      "created": "2014-12-09T18:38:41.000Z",
+      "iCalUID": "2F8D62F7-B6B2-473E-98D3-5F3F8AFCE3A7",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzY5MzNnaDFtNjkzM2ViYTI2cDEzNGI5azZzcGthYjlwNzEyMzZiOWw4b3BrY2UyMThwMWthY3ExNnMgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-12T22:43:25.867Z",
+      "summary": "Finish capstone test",
+      "start": {
+        "dateTime": "2014-12-09T11:15:00-07:00"
+      },
+      "etag": "\"2836848411734000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6933gh1m6933eba26p134b9k6spkab9p71236b9l8opkce218p1kacq16s",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6933gh1m6933eba26p134b9k6spkab9p71236b9l8opkce218p1kacq16s"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-13T13:00:00-07:00"
+      },
+      "created": "2014-12-12T22:46:59.000Z",
+      "iCalUID": "FC5137D9-E0DE-43ED-83DB-685968C2EE07",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhwMWphYzlqNnQyM2liYTU2MTI0YWI5azZkMms4YjlvNmQyNDRiOW03MHFqaWRobzhjcDRhaDlnNnMgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-12T22:47:59.331Z",
+      "summary": "Study DSP",
+      "start": {
+        "dateTime": "2014-12-13T10:00:00-07:00"
+      },
+      "etag": "\"2836848958662000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8p1jac9j6t23iba56124ab9k6d2k8b9o6d244b9m70qjidho8cp4ah9g6s",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8p1jac9j6t23iba56124ab9k6d2k8b9o6d244b9m70qjidho8cp4ah9g6s"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-14T13:00:00-07:00"
+      },
+      "created": "2014-12-12T22:52:59.000Z",
+      "iCalUID": "75A3E146-B6D1-4838-AEE5-01DFF7CE6216",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZzcWsyY3E1NjRxM2NiYTI2cDIzMmI5azcwcGpnYmExOGwyamFiOWc2NTI0Y2hobjhkMmpjY2hoNm8gcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-12T22:52:59.502Z",
+      "summary": "Study DSP",
+      "start": {
+        "dateTime": "2014-12-14T10:00:00-07:00"
+      },
+      "etag": "\"2836849559004000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6sqk2cq564q3cba26p232b9k70pjgba18l2jab9g6524chhn8d2jcchh6o",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6sqk2cq564q3cba26p232b9k70pjgba18l2jab9g6524chhn8d2jcchh6o"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-16T18:00:00-07:00"
+      },
+      "created": "2014-12-12T22:47:13.000Z",
+      "iCalUID": "57FC1F25-877F-48AF-ACB3-251997E4AFBB",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZrcmtjZ3BoOG9wM2FiOW82c3JrY2I5azcxMGtjYmExOGQxMzZiOWk2a29qaWU5bjhrcTQyaGkyODggcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-12T22:53:54.509Z",
+      "summary": "Study Controls",
+      "start": {
+        "dateTime": "2014-12-16T14:00:00-07:00"
+      },
+      "etag": "\"2836849669018000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6krkcgph8op3ab9o6srkcb9k710kcba18d136b9i6kojie9n8kq42hi288",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6krkcgph8op3ab9o6srkcb9k710kcba18d136b9i6kojie9n8kq42hi288"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-13T17:00:00-07:00"
+      },
+      "created": "2014-12-12T22:51:34.000Z",
+      "iCalUID": "8836AA3B-C83E-4CCA-9822-E8B04B2561C3",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzcwczM2ZGkxODRwazRiYTM3MHBrYWI5azhkMWsyYjlwNzBwMzRiYTU3MTEzMGQyMjY4cWpjY2EzNmMgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-12T22:54:40.424Z",
+      "summary": "Study Controls",
+      "start": {
+        "dateTime": "2014-12-13T13:00:00-07:00"
+      },
+      "etag": "\"2836849760848000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_70s36di184pk4ba370pkab9k8d1k2b9p70p34ba571130d2268qjcca36c",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._70s36di184pk4ba370pkab9k8d1k2b9p70p34ba571130d2268qjcca36c"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-15T22:00:00-07:00"
+      },
+      "created": "2014-12-12T22:51:30.000Z",
+      "iCalUID": "7C2F53B5-ECCB-413A-A4E7-DB2E296087BD",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZ0MWo0aGhsNmQxM2FiYTU4ZDFrNGI5azY0cGsyYmExNmgyamViYTQ4OHA0YWNocDZvbzNnZHEyOGcgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-15T18:46:12.422Z",
+      "summary": "Study DSP",
+      "start": {
+        "dateTime": "2014-12-15T17:00:00-07:00"
+      },
+      "etag": "\"2837338344844000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6t1j4hhl6d13aba58d1k4b9k64pk2ba16h2jeba488p4achp6oo3gdq28g",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6t1j4hhl6d13aba58d1k4b9k64pk2ba16h2jeba488p4achp6oo3gdq28g"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-15T17:00:00-07:00"
+      },
+      "created": "2014-12-12T22:53:40.000Z",
+      "iCalUID": "FF75F7AE-AE25-472D-8390-31902E1B7D0C",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhwMzNlZGE2NnQwa2FiYTE4a3AzYWI5azZzcDQ4YjlvNmNzajBiOWo2NHNqMGNpNTY1MTNlaDFnOGMgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-15T18:46:17.844Z",
+      "summary": "Study Controls",
+      "start": {
+        "dateTime": "2014-12-15T13:00:00-07:00"
+      },
+      "etag": "\"2837338355688000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8p33eda66t0kaba18kp3ab9k6sp48b9o6csj0b9j64sj0ci56513eh1g8c",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8p33eda66t0kaba18kp3ab9k6sp48b9o6csj0b9j64sj0ci56513eh1g8c"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-14T17:00:00-07:00"
+      },
+      "created": "2014-12-15T18:46:20.000Z",
+      "iCalUID": "10C9A52B-F12D-4EC0-A20C-ED723384DC45",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzY0bzQ2ZWExNmtwNDRiYTY2NHA0OGI5azhsMWowYmExNjhvNDZiYTU4Z3JqNGNwajcwcTQ4Z3BrNmsgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-15T18:46:20.831Z",
+      "summary": "Study Controls",
+      "start": {
+        "dateTime": "2014-12-14T13:00:00-07:00"
+      },
+      "etag": "\"2837338361546000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_64o46ea16kp44ba664p48b9k8l1j0ba168o46ba58grj4cpj70q48gpk6k",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._64o46ea16kp44ba664p48b9k8l1j0ba168o46ba58grj4cpj70q48gpk6k"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "dateTime": "2014-12-15T13:00:00-07:00"
+      },
+      "created": "2014-12-12T22:50:55.000Z",
+      "iCalUID": "E7F8BE47-2942-491F-A9CF-C8A70884E9AC",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhrcmtjZTIyOGtxM2ViOWk3NHEzNGI5azc0b2tjYmExNzUxa2NiYTM3MTBqZWMxbzcwcTRhZWExOGMgcm9iYTk3NjNAY29sb3JhZG8uZWR1",
+      "sequence": 0,
+      "updated": "2014-12-15T18:46:35.444Z",
+      "summary": "Study Probability",
+      "start": {
+        "dateTime": "2014-12-15T12:00:00-07:00"
+      },
+      "etag": "\"2837338390888000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8krkce228kq3eb9i74q34b9k74okcba1751kcba3710jec1o70q4aea18c",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8krkce228kq3eb9i74q34b9k74okcba1751kcba3710jec1o70q4aea18c"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-27T10:50:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:06.000Z",
+      "iCalUID": "EBD77719-9822-4B43-A173-186447BCC23E",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhsMTQ4ZHBuNnNvamliOXA3MHAzNGI5azg4cTM2YmExNjRyajZiOWg3MHIzOGQxbjg5MWs2Y2hqOGtfMjAxNDA4MjdUMTYwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-29T22:14:06.029Z",
+      "summary": "Digital Filter Design",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141217T100000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20141230T235959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-27T10:00:00-06:00"
+      },
+      "etag": "\"2829054229416000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8l148dpn6sojib9p70p34b9k88q36ba164rj6b9h70r38d1n891k6chj8k",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8l148dpn6sojib9p70p34b9k88q36ba164rj6b9h70r38d1n891k6chj8k"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-27T13:50:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:00.000Z",
+      "iCalUID": "C35B762C-0EE6-442D-B7F9-94D1E5F37B5F",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 20,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhjcGphZ2huNm9wNDZiOWc4bDJqY2I5azZncDQ4YmEyNnQzM2liOXA2aDIzMmg5bDhvcGplZ2hsOG9fMjAxNDA4MjdUMTkwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-29T22:14:09.612Z",
+      "summary": "Control System Analysis",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141217T130000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20141230T235959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-27T13:00:00-06:00"
+      },
+      "etag": "\"2836146130885000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8cpjaghn6op46b9g8l2jcb9k6gp48ba26t33ib9p6h232h9l8opjeghl8o",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8cpjaghn6op46b9g8l2jcb9k6gp48ba26t33ib9p6h232h9l8opjeghl8o"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-27T14:50:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:00.000Z",
+      "iCalUID": "F6418850-55AB-4CDF-9C75-459A3E71FE4D",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhvcjM4YzlvNzBxajBiOWw2bDBrNGI5azhkMjRjYjlwOGNyamFiOWs2a3NrMmNxNTZzb2tjaDlrOGdfMjAxNDA4MjdUMjAwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-29T22:14:12.150Z",
+      "summary": "Probability",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141217T140000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20141230T235959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-27T14:00:00-06:00"
+      },
+      "etag": "\"2836146132720000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8or38c9o70qj0b9l6l0k4b9k8d24cb9p8crjab9k6ksk2cq56sokch9k8g",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8or38c9o70qj0b9l6l0k4b9k8d24cb9p8crjab9k6ksk2cq56sokch9k8g"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-28T19:30:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:07.000Z",
+      "iCalUID": "91F55C4B-4220-465E-892A-1B591BDD14D9",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=Xzc0b2tjZDlsOGNxNDRiOWs2OHAzMGI5azZvcWthYjlvNzRwNDJiOWg4OHFqaWNhMjhoMjMyZDI0NzRfMjAxNDA4MjhUMjMwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-29T22:14:24.378Z",
+      "summary": "Computer Graphics",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141218T170000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20150101T235959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-28T17:00:00-06:00"
+      },
+      "etag": "\"2836146146482000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_74okcd9l8cq44b9k68p30b9k6oqkab9o74p42b9h88qjica28h232d2474",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._74okcd9l8cq44b9k68p30b9k6oqkab9o74p42b9h88qjica28h232d2474"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-29T10:50:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:07.000Z",
+      "iCalUID": "124D10F2-891A-4F1F-A771-67F75A7B142A",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzY0cDM4aDFoNjEzMzRiOW83NG9rMmI5azhvb2tjYmExNnNyajJiOW02dDMzZWRhMTZ0MTMyZDFpODRfMjAxNDA4MjlUMTYwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-29T22:14:26.890Z",
+      "summary": "Digital Filter Design",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141219T100000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20150101T235959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-29T10:00:00-06:00"
+      },
+      "etag": "\"2836146151497000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_64p38h1h61334b9o74ok2b9k8ookcba16srj2b9m6t33eda16t132d1i84",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._64p38h1h61334b9o74ok2b9k8ookcba16srj2b9m6t33eda16t132d1i84"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-29T13:50:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:08.000Z",
+      "iCalUID": "4B420B76-66F8-47DC-B2F3-34511073F341",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 20,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZoMTM4Y2hnODhyamNiOW02cDMzZ2I5azZ0MjQ2YmEyNjkzMzZiOWo2Z3FqMmM5ZzZzcGtjY3BrNjRfMjAxNDA4MjlUMTkwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-29T22:14:29.857Z",
+      "summary": "Control System Analysis",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141219T130000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20150101T235959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-29T13:00:00-06:00"
+      },
+      "etag": "\"2836146153543000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6h138chg88rjcb9m6p33gb9k6t246ba269336b9j6gqj2c9g6spkccpk64",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6h138chg88rjcb9m6p33gb9k6t246ba269336b9j6gqj2c9g6spkccpk64"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-29T14:50:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:08.000Z",
+      "iCalUID": "ABF92D63-9597-44EB-88CB-82AB96C73BE8",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=Xzg1MTRjZTlpOGdyMzZiOXA2a3NqZWI5azZoMms0YjlvNzExazRiOW82OTBrNGU5bThjcmo2Z2k1NzBfMjAxNDA4MjlUMjAwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-29T22:14:32.756Z",
+      "summary": "Probability",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141219T140000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20150101T235959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-29T14:00:00-06:00"
+      },
+      "etag": "\"2836146155739000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8514ce9i8gr36b9p6ksjeb9k6h2k4b9o711k4b9o690k4e9m8crj6gi570",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8514ce9i8gr36b9p6ksjeb9k6h2k4b9o711k4b9o690k4e9m8crj6gi570"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-25T14:50:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:32:59.000Z",
+      "iCalUID": "F561D0E0-9E2B-4508-A1B6-1AB38E459D2B",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 20,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhvcWpjY2E0NjEyajBiOXA4a3A0NGI5azZrbzNnYmExNjUxM2NiOWg4NTEzNmUyNTZncWppaDFpODhfMjAxNDA4MjVUMjAwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-29T22:14:50.654Z",
+      "summary": "Probability",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141215T140000,20141229T140000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20150104T235959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-25T14:00:00-06:00"
+      },
+      "etag": "\"2836146176445000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8oqjcca4612j0b9p8kp44b9k6ko3gba16513cb9h85136e256gqjih1i88",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8oqjcca4612j0b9p8kp44b9k6ko3gba16513cb9h85136e256gqjih1i88"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-25T13:50:00-06:00"
+      },
+      "created": "2014-08-25T04:32:58.000Z",
+      "iCalUID": "1DD53248-1EC8-43E8-951A-0F3DFC014F83",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzY1MjQ4ZDlqNjhxM2diOWg4bDFqZ2I5azZkMmpnYjlwNmtvazJiOWc4b3BrOGhpMzYwb2o4aGhvNmNfMjAxNDA4MjVUMTkwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 1,
+      "updated": "2014-12-29T22:14:53.935Z",
+      "summary": "Control System Analysis",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141215T130000,20141229T130000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20150104T235959Z;INTERVAL=1;BYDAY=MO"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-25T13:00:00-06:00"
+      },
+      "etag": "\"2837960039612000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_65248d9j68q3gb9h8l1jgb9k6d2jgb9p6kok2b9g8opk8hi360oj8hho6c",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._65248d9j68q3gb9h8l1jgb9k6d2jgb9p6kok2b9g8opk8hi360oj8hho6c"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-25T10:50:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:32:59.000Z",
+      "iCalUID": "01C94DD3-EEAE-4E4D-87A9-C0F49304F92C",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzYwb2s2ZTlrOGgyMzZiYTU4bDBrYWI5azhrcTQ4YjlvNnQwamliYTM2MTMzOGU5ajYwcTRjZTlpOGNfMjAxNDA4MjVUMTYwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-29T22:14:56.532Z",
+      "summary": "Digital Filter Design",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141215T100000,20141229T100000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20150104T235959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-25T10:00:00-06:00"
+      },
+      "etag": "\"2836146176294000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_60ok6e9k8h236ba58l0kab9k8kq48b9o6t0jiba361338e9j60q4ce9i8c",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._60ok6e9k8h236ba58l0kab9k8kq48b9o6t0jiba361338e9j60q4ce9i8c"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-26T11:45:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:09.000Z",
+      "iCalUID": "EF776ABC-2A4E-4FCB-927B-A083C3F2CCED",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhsMzNlZHBtODUxNDZiOWk4NHE0YWI5azhwMWs0YjlwNjhyazRiYTE2MHMzNmdwajhvcDQ2Z3E1OGdfMjAxNDA4MjZUMTUwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-30T00:32:06.933Z",
+      "summary": "Capstone Lab",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141216T090000,20141230T090000,20150106T090000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20150112T235959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-26T09:00:00-06:00"
+      },
+      "etag": "\"2836154413666000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8l33edpm85146b9i84q4ab9k8p1k4b9p68rk4ba160s36gpj8op46gq58g",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8l33edpm85146b9i84q4ab9k8p1k4b9p68rk4ba160s36gpj8op46gq58g"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2015-01-13T11:45:00-07:00"
+      },
+      "description": " ",
+      "created": "2014-12-30T00:32:07.000Z",
+      "iCalUID": "C2C5EC80-3881-45A8-A93B-34E9A52EDFF1",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhjcDQ2ZGE1OGNzMzBiOWo3MHMzMmI5azZsMGpnYmExNzRwazRiOWo2aDJqaWc5bDY5Mms4aGk2NjRfMjAxNTAxMTNUMTYwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-30T00:32:07.788Z",
+      "summary": "Capstone Lab",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2015-01-13T09:00:00-07:00"
+      },
+      "etag": "\"2839799055509000\"",
+      "location": "ECEN 1B24",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8cp46da58cs30b9j70s32b9k6l0jgba174pk4b9j6h2jig9l692k8hi664",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8cp46da58cs30b9j70s32b9k6l0jgba174pk4b9j6h2jig9l692k8hi664"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-28T11:45:00-06:00"
+      },
+      "description": " ",
+      "created": "2014-08-25T04:33:06.000Z",
+      "iCalUID": "87003313-D62E-459C-9FDE-75D287C5B974",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzcwcmowYzFqNmNvajZiYTQ2b3A0YWI5azZrc2s2YjlwOHAyNGFiOW42bDIzNGUxbjhjcWs0ZTluNmdfMjAxNDA4MjhUMTUwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-30T00:32:19.852Z",
+      "summary": "Capstone Lab",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20141218T090000,20150101T090000,20150108T090000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20150114T235959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2014-08-28T09:00:00-06:00"
+      },
+      "etag": "\"2837968262644000\"",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_70rj0c1j6coj6ba46op4ab9k6ksk6b9p8p24ab9n6l234e1n8cqk4e9n6g",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._70rj0c1j6coj6ba46op4ab9k6ksk6b9p8p24ab9n6l234e1n8cqk4e9n6g"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2015-01-15T11:45:00-07:00"
+      },
+      "description": " ",
+      "created": "2014-12-30T00:32:20.000Z",
+      "iCalUID": "B7CA1E63-C998-4F19-A220-F3BD72184306",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=Xzg4cms2ZzloOGtyMzZiYTM3NHNqZ2I5azhvb2ppYmExNjhwMzBiYTY2ZDE0OGRwaTY0czM4Y3BnNm9fMjAxNTAxMTVUMTYwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-30T00:32:20.430Z",
+      "summary": "Capstone Lab",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2015-01-15T09:00:00-07:00"
+      },
+      "etag": "\"2839799080806000\"",
+      "location": "ECEN 1B24",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_88rk6g9h8kr36ba374sjgb9k8oojiba168p30ba66d148dpi64s38cpg6o",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._88rk6g9h8kr36ba374sjgb9k8oojiba168p30ba66d148dpi64s38cpg6o"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2015-01-14T19:30:00-07:00"
+      },
+      "created": "2014-12-30T00:45:22.000Z",
+      "iCalUID": "5FD7AEE4-BCA8-407F-A635-E96C552861EC",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZsMzQ4ZHExOGwyajhiYTI4ZDBqZ2I5azYwcmtjYmExNm9wamFiYTU3NHI0NmQ5bDY4czNjY2E1OGNfMjAxNTAxMTVUMDAwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-30T00:45:22.443Z",
+      "summary": "Humans in Aviation",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20150503T055959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2015-01-14T17:00:00-07:00"
+      },
+      "etag": "\"2841011281994000\"",
+      "location": "ECCR 1B40",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6l348dq18l2j8ba28d0jgb9k60rkcba16opjaba574r46d9l68s3cca58c",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6l348dq18l2j8ba28d0jgb9k60rkcba16opjaba574r46d9l68s3cca58c"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-13T14:30:00-07:00"
+      },
+      "created": "2014-12-30T00:41:46.000Z",
+      "iCalUID": "45A3192C-2102-4348-B8E1-AAD20A23B23B",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZncWsyY3BoNzRwNDZiOWk2NG8zNGI5azZjcTNnYmEyNzEyajJiYTE4NTIzNGMyMTY4cGs0Y2hqODhfMjAxNTAxMTNUMTkwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-30T00:47:12.003Z",
+      "summary": "Control System Lab",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20150503T055959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-13T12:00:00-07:00"
+      },
+      "etag": "\"2839800864006000\"",
+      "location": "Drescher Undergrad 1B10",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6gqk2cph74p46b9i64o34b9k6cq3gba2712j2ba185234c2168pk4chj88",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6gqk2cph74p46b9i64o34b9k6cq3gba2712j2ba185234c2168pk4chj88"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-15T14:30:00-07:00"
+      },
+      "created": "2014-12-30T00:44:22.000Z",
+      "iCalUID": "8DB8264B-578E-4815-BC3C-CBC6314774EB",
+      "reminders": {
+        "useDefault": true
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzcxMjQ0ZTFpNm9xNDRiOWw2c3M0YWI5azcwb2phYmEyOGNwazZiYTM4OTFqY2NwaDZncmplZDI1ODhfMjAxNTAxMTVUMTkwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-30T00:48:01.070Z",
+      "summary": "Control System Lab",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20150503T055959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-15T12:00:00-07:00"
+      },
+      "etag": "\"2839800923182000\"",
+      "location": "Drescher Undergrad 1B10",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_71244e1i6oq44b9l6ss4ab9k70ojaba28cpk6ba3891jccph6grjed2588",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._71244e1i6oq44b9l6ss4ab9k70ojaba28cpk6ba3891jccph6grjed2588"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-14T13:50:00-07:00"
+      },
+      "created": "2014-12-30T00:44:15.000Z",
+      "iCalUID": "D04FC40C-0FEA-4260-9EF9-BC0714A88DD7",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 15,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhnbzM4aGkzNmdvNDZiOWc4cDJrMmI5azY4cjMwYjlwOGwzM2liYTI4Y28zZWM5azg0czNnaDI0NnNfMjAxNTAxMTRUMjAwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-30T00:48:27.705Z",
+      "summary": "Computer Organization",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20150503T055959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-14T13:00:00-07:00"
+      },
+      "etag": "\"2839800763590000\"",
+      "location": "ECCR 151",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8go38hi36go46b9g8p2k2b9k68r30b9p8l33iba28co3ec9k84s3gh246s",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8go38hi36go46b9g8p2k2b9k68r30b9p8l33iba28co3ec9k84s3gh246s"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-16T13:50:00-07:00"
+      },
+      "created": "2014-12-30T00:44:18.000Z",
+      "iCalUID": "E2B74D4E-94F8-4A31-A101-197F73ADDFF6",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 15,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzhrcDQ0ZHBrOGdxNGFiOXA2aDMzZ2I5azg0cGoyYmExNjRvMzJiOWg3NHJrY2Rwajg1MjQ4aGk2Nm9fMjAxNTAxMTZUMjAwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2014-12-30T00:49:05.386Z",
+      "summary": "Computer Organization",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20150503T055959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-16T13:00:00-07:00"
+      },
+      "etag": "\"2839800803816000\"",
+      "location": "ECCR 151",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_8kp44dpk8gq4ab9p6h33gb9k84pj2ba164o32b9h74rkcdpj85248hi66o",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._8kp44dpk8gq4ab9p6h33gb9k84pj2ba164o32b9h74rkcdpj85248hi66o"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-14T11:50:00-07:00"
+      },
+      "created": "2014-12-30T00:36:54.000Z",
+      "iCalUID": "4B529CE4-3BB6-4570-95ED-97ED1E88E1F7",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZoMTNhY2hwOGQyajhiOWo4OTEzY2I5azZrcmowYjlwNmwyazhiOXA2dDJrOGNhNTcwczRhY2E2NnNfMjAxNTAxMTRUMTgwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2015-01-12T17:52:26.757Z",
+      "summary": "Bioelectromagnetics",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20150503T055959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-14T11:00:00-07:00"
+      },
+      "etag": "\"2840984961145000\"",
+      "location": "ECEE 265",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6h13achp8d2j8b9j8913cb9k6krj0b9p6l2k8b9p6t2k8ca570s4aca66s",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6h13achp8d2j8b9j8913cb9k6krj0b9p6l2k8b9p6t2k8ca570s4aca66s"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-16T11:50:00-07:00"
+      },
+      "created": "2014-12-30T00:37:40.000Z",
+      "iCalUID": "8C9A83DA-4619-4256-94E1-519AC056F65A",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzcxMWppZzlvNmQyNDJiOWs2b29qaWI5azY4cWpjYjlwNmgyajJiOWw2NHNrMmdwZzZrcjRjZGhsODRfMjAxNTAxMTZUMTgwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2015-01-12T17:52:35.068Z",
+      "summary": "Bioelectromagnetics",
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;UNTIL=20150503T055959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-16T11:00:00-07:00"
+      },
+      "etag": "\"2840985015565000\"",
+      "location": "ECEE 265",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_711jig9o6d242b9k6oojib9k68qjcb9p6h2j2b9l64sk2gpg6kr4cdhl84",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._711jig9o6d242b9k6oojib9k68qjcb9p6h2j2b9l64sk2gpg6kr4cdhl84"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-12T11:50:00-07:00"
+      },
+      "created": "2014-12-30T00:33:29.000Z",
+      "iCalUID": "37EC51E6-AE0C-43AC-9E5D-4BAA050ABC99",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=XzZjcmthZ3BsNjUyamNiYTE4a280NmI5azZkMGs2YjlwOGtxazhiOWs4OTBrMmMxbDYxMGs0Z3BwNzRfMjAxNTAxMTJUMTgwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2015-01-19T17:35:17.303Z",
+      "summary": "Bioelectromagnetics",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20150119T110000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20150503T055959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "UTC",
+        "dateTime": "2015-01-12T11:00:00-07:00"
+      },
+      "etag": "\"2841588720964000\"",
+      "location": "ECEE 265",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_6crkagpl652jcba18ko46b9k6d0k6b9p8kqk8b9k890k2c1l610k4gpp74",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._6crkagpl652jcba18ko46b9k6d0k6b9p8kqk8b9k890k2c1l610k4gpp74"
+    },
+    {
+      "status": "confirmed",
+      "kind": "calendar#event",
+      "end": {
+        "timeZone": "America/Denver",
+        "dateTime": "2015-01-12T13:50:00-07:00"
+      },
+      "created": "2014-12-30T00:41:25.000Z",
+      "iCalUID": "9EA90C72-C733-4394-A2D8-DB88BFF3AE47",
+      "reminders": {
+        "overrides": [
+          {
+            "minutes": 15,
+            "method": "popup"
+          }
+        ],
+        "useDefault": false
+      },
+      "htmlLink": "https://www.google.com/calendar/event?eid=Xzc1MmsyZTlnOGNyajRiYTM2c3BqNmI5azZjc2o4YmExNjkyM2diYTQ4OHMzZ2dpNjhvcGsyaDlrNnNfMjAxNTAxMTJUMjAwMDAwWiByb2JhOTc2M0Bjb2xvcmFkby5lZHU",
+      "sequence": 0,
+      "updated": "2015-02-09T19:48:34.369Z",
+      "summary": "Computer Organization",
+      "recurrence": [
+        "EXDATE;TZID=America/Denver:20150119T130000",
+        "RRULE:FREQ=WEEKLY;UNTIL=20150503T055959Z;INTERVAL=1"
+      ],
+      "start": {
+        "timeZone": "America/Denver",
+        "dateTime": "2015-01-12T13:00:00-07:00"
+      },
+      "etag": "\"2843411400339000\"",
+      "location": "ECCR 151",
+      "organizer": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "creator": {
+        "self": true,
+        "displayName": "Robert Bartlett",
+        "email": "roba9763@colorado.edu"
+      },
+      "id": "_752k2e9g8crj4ba36spj6b9k6csj8ba16923gba488s3ggi68opk2h9k6s",
+      "hangoutLink": "https://plus.google.com/hangouts/_/colorado.edu/roba9763?hceid=cm9iYTk3NjNAY29sb3JhZG8uZWR1._752k2e9g8crj4ba36spj6b9k6csj8ba16923gba488s3ggi68opk2h9k6s"
+    }
+  ],
+  "updated": "2015-02-09T19:48:34.369Z",
+  "summary": "roba9763@colorado.edu",
+  "etag": "\"1423511314369000\"",
+  "nextSyncToken": "COiT6PHQ1cMCEOiT6PHQ1cMCGAU=",
+  "timeZone": "America/Denver",
+  "accessRole": "owner"
+}

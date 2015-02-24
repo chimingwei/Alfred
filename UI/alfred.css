@@ -1,0 +1,330 @@
+@import "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
+
+
+h1{text-align:center;}
+h2{text-align:center;}
+
+p {font-size:18px;
+text-align:center;}
+
+body {
+  background: #39D;
+  position: relative;
+  z-index: -1;
+}
+
+a:link {color:#E0E0E0;}    /* unvisited link */
+a:hover {color:#C0C0C0;}   /* mouse over link */
+a:active {color:#A0A0A0;}  /* selected link */
+
+
+.btn {
+  background: #132633;
+  background-image: -webkit-linear-gradient(top, #132633, #2980b9);
+  background-image: -moz-linear-gradient(top, #132633, #2980b9);
+  background-image: -ms-linear-gradient(top, #132633, #2980b9);
+  background-image: -o-linear-gradient(top, #132633, #2980b9);
+  background-image: linear-gradient(to bottom, #132633, #2980b9);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 90%;
+  left:0px;
+  z-index: 1;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#menu { 
+width: 150px; 
+height: 90%;
+background: black;
+position: fixed;
+bottom: 0px;
+left:0px;
+color: #fff;
+display: none;
+z-index: 1; }
+
+.menuItem {
+background-color: black;
+color: white;
+float: left;
+margin: 5px;
+padding: 15px;
+width: 200px;
+height: 200px;
+border: 1px solid black;
+z-index: -1
+} 
+.menuItemTwo {
+background-color: blue;
+color: white;
+float: left;
+margin: 5px;
+padding: 15px;
+width: 200px;
+height: 200px;
+border: 1px solid black;
+z-index: -1
+} 
+
+.circular-menu {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  /*postion bottom and right were added */
+  position: fixed;
+  bottom: -105px;
+  right: -95px;
+  opacity: 0;
+  
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.open.circle {
+  opacity: 1;
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.circle a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute;
+  text-align: center;
+
+}
+
+/*
+.circle button {
+  text-decoration: none;
+  color: white;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute;
+  text-align: center;
+
+} */
+
+.circle a:hover {
+  color: #eef;
+}
+
+.menu-button {
+  /* position: absolute; */
+  position: fixed;
+  bottom: calc(3% - 30px);
+  right: calc(3% - 30px);
+  text-decoration: none;
+  text-align: center;
+  color: #444;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  padding: 10px;
+  background: #dde;
+}
+
+.menu-button:hover {
+  background-color: #eef;
+}
+
+/*Card Flip*/
+.cards{
+    margin:20px;
+    perspective: 500;
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    -o-perspective: 500;
+    width:200px;
+    height:200px;
+	z-index: -1;
+    background-color:#585858;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -o-transform-style:preserve-3d;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+	
+    cursor:pointer;
+    /* Animate the transitions */
+    -webkit-transition:0.8s; text-align:center;
+    -moz-transition:0.8s; text-align:center;
+    -ms-transition:0.8s; text-align:center;
+    -o-transition:0.8s; text-align:center;
+    transition:0.8s; text-align:center;
+    
+}
+
+.flip{
+  transform:rotateY(360deg) scale(1.2,1.2);
+  -webkit-transform:rotateY(360deg) scale(1.2,1.2);
+  -moz-transform:rotateY(360deg);
+  -o-transform:rotateY(360deg);
+  -ms-transform:rotateY(360deg);
+  background-color:#A80000;
+    
+}
+
+.cards2{
+    margin:20px;
+    perspective: 500;
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    -o-perspective: 500;
+    width:200px;
+    height:200px;
+	z-index: -1;
+    background-color:#585858;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -o-transform-style:preserve-3d;
+    position: absolute;
+    left: 350px;
+    top: 100px;
+	
+    cursor:pointer;
+    /* Animate the transitions */
+    -webkit-transition:0.8s; text-align:center;
+    -moz-transition:0.8s; text-align:center;
+    -ms-transition:0.8s; text-align:center;
+    -o-transition:0.8s; text-align:center;
+    transition:0.8s; text-align:center;
+    
+}
+
+.flip2{
+  transform:rotateY(360deg) scale(1.2,1.2);
+  -webkit-transform:rotateY(360deg) scale(1.2,1.2);
+  -moz-transform:rotateY(360deg);
+  -o-transform:rotateY(360deg);
+  -ms-transform:rotateY(360deg);
+  background-color:#A80000;
+    
+}
+
+
+.cards3{
+    margin:20px;
+    perspective: 500;
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    -o-perspective: 500;
+    width:200px;
+    height:200px;
+	z-index: -1;
+    background-color:#585858;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -o-transform-style:preserve-3d;
+	position: absolute;
+    left: 600px;
+    top: 100px;
+	
+    cursor:pointer;
+    /* Animate the transitions */
+    -webkit-transition:0.8s; text-align:center;
+    -moz-transition:0.8s; text-align:center;
+    -ms-transition:0.8s; text-align:center;
+    -o-transition:0.8s; text-align:center;
+    transition:0.8s; text-align:center;
+    
+}
+
+.flip3{
+  transform:rotateY(360deg) scale(1.2,1.2);
+  -webkit-transform:rotateY(360deg) scale(1.2,1.2);
+  -moz-transform:rotateY(360deg);
+  -o-transform:rotateY(360deg);
+  -ms-transform:rotateY(360deg);
+  background-color:#A80000;
+    
+}
+
+.cards4{
+    margin:20px;
+    perspective: 500;
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    -o-perspective: 500;
+    width:200px;
+    height:200px;
+	z-index: -1;
+    background-color:#585858;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -o-transform-style:preserve-3d;
+    position: absolute;
+    left: 850px;
+    top: 100px;
+	
+    cursor:pointer;
+    /* Animate the transitions */
+    -webkit-transition:0.8s; text-align:center;
+    -moz-transition:0.8s; text-align:center;
+    -ms-transition:0.8s; text-align:center;
+    -o-transition:0.8s; text-align:center;
+    transition:0.8s; text-align:center;
+    
+}
+
+.flip4{
+  transform:rotateY(360deg) scale(1.2,1.2);
+  -webkit-transform:rotateY(360deg) scale(1.2,1.2);
+  -moz-transform:rotateY(360deg);
+  -o-transform:rotateY(360deg);
+  -ms-transform:rotateY(360deg);
+  background-color:#A80000;
+    
+}
