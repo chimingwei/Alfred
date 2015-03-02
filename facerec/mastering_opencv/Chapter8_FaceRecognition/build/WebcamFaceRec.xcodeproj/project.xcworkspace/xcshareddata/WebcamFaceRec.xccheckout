@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9B2200E8-69F9-4529-9946-8DBAE79AD661</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WebcamFaceRec</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>20CD8EF1656F1CDA611CDB589B22F5629D91A5AC</key>
+		<string>https://github.com/pmpbar/Alfred.git</string>
+		<key>CE3D7499BEF6CE07693F5D2B1D225DD710BB1908</key>
+		<string>https://github.com/MasteringOpenCV/code.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Chapter8_FaceRecognition/build/WebcamFaceRec.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>20CD8EF1656F1CDA611CDB589B22F5629D91A5AC</key>
+		<string>../../../../../..</string>
+		<key>CE3D7499BEF6CE07693F5D2B1D225DD710BB1908</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MasteringOpenCV/code.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CE3D7499BEF6CE07693F5D2B1D225DD710BB1908</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>20CD8EF1656F1CDA611CDB589B22F5629D91A5AC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>..</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE3D7499BEF6CE07693F5D2B1D225DD710BB1908</string>
+			<key>IDESourceControlWCCName</key>
+			<string>code</string>
+		</dict>
+	</array>
+</dict>
+</plist>

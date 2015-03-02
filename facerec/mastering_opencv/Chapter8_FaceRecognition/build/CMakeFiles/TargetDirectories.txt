@@ -1,0 +1,3 @@
+/Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build/CMakeFiles/WebcamFaceRec.dir
+/Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build/CMakeFiles/ALL_BUILD.dir
+/Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build/CMakeFiles/ZERO_CHECK.dir

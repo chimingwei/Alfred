@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              3051B07ACDDC47BD83763739 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = EDBDB15A5C8041EDA9BE3F47 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            FA1D519C7A4F4C829615C339 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            050DBEC7270A49E681B34ECC /* PBXTargetDependency */,
+                            075409FDD4A546129124D5AD /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              F2FCE8BEF0A3419EA7D0197E /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = C42A40CF3F564A4CA15D81A6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            4C86285044CC4270B55C88F9 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+E023D32192DF4AA790C30121 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CAB36FD0606B4332A2BFB10F /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+95B3327711DC44CAAEE4F993 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/ImageUtils_0.7.cpp */ = {isa = PBXBuildFile; fileRef = CA1F87EB4C854E75A4A78F10 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/ImageUtils_0.7.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+B1130E988FC346F8A5A6791B /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/detectObject.cpp */ = {isa = PBXBuildFile; fileRef = 34E8AA4856A2433C926D8F79 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/detectObject.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+CAA05A1AB6E94DCD8B041A95 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/main.cpp */ = {isa = PBXBuildFile; fileRef = 35429CF03DD74268877E9E83 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/main.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+B638201F594F49AAA8ECA253 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/preprocessFace.cpp */ = {isa = PBXBuildFile; fileRef = 5BBCB3CC94B049939300CD85 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/preprocessFace.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A8AAE6EBCBC34C4CBC184C80 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/recognition.cpp */ = {isa = PBXBuildFile; fileRef = 7CB8203759ED4D7EBA208361 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/recognition.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              C18CC5AB4E12496ABF445F7F /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              2C37B346856C4786B32BD3C2 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              A21422F41A9F4BD0A824DDF8 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              7F01CB01D85843FEB7357602 /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              E40456047E984D45A9AC1FF0 /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              6B437E2D7AFD4C6CAAA882FA /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = DBE71FA83EF64A48AB5765E2 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = F2FCE8BEF0A3419EA7D0197E;
+                     remoteInfo = ZERO_CHECK;
+              };
+              E6172DB0D40E44A1A59F2F33 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = DBE71FA83EF64A48AB5765E2 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 822950F4ABD64D75BA9524B6;
+                     remoteInfo = WebcamFaceRec;
+              };
+              F16F30D04CCF4E8490B7F197 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = DBE71FA83EF64A48AB5765E2 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = F2FCE8BEF0A3419EA7D0197E;
+                     remoteInfo = ZERO_CHECK;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+CAB36FD0606B4332A2BFB10F /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+CA1F87EB4C854E75A4A78F10 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/ImageUtils_0.7.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ImageUtils_0.7.cpp"; path = "ImageUtils_0.7.cpp"; sourceTree = SOURCE_ROOT; };
+34E8AA4856A2433C926D8F79 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/detectObject.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "detectObject.cpp"; path = "detectObject.cpp"; sourceTree = SOURCE_ROOT; };
+35429CF03DD74268877E9E83 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/main.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "main.cpp"; path = "main.cpp"; sourceTree = SOURCE_ROOT; };
+5BBCB3CC94B049939300CD85 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/preprocessFace.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "preprocessFace.cpp"; path = "preprocessFace.cpp"; sourceTree = SOURCE_ROOT; };
+7CB8203759ED4D7EBA208361 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/recognition.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "recognition.cpp"; path = "recognition.cpp"; sourceTree = SOURCE_ROOT; };
+EEA22E70B4B04A0B82DACDC3 /* WebcamFaceRec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = WebcamFaceRec; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+5B51315540044B27A7A8D421 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+BA77643A9ADD4D099CFEEC7F /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              C0A0BE72C70B445A9B412058  = {
+                     isa = PBXGroup;
+                     children = (
+                            43CBDD9F2E7D41F486B9DA52 /* Sources */,
+                            DE65EFFD4A5C4FD9B338D491 /* Resources */,
+                            72BE456212C1476A8EB241FF /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              43CBDD9F2E7D41F486B9DA52 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7CDFBAC1A3FB480FB4755F02 /* WebcamFaceRec */,
+                            7B402C1E1A534A6484CECCCF /* ALL_BUILD */,
+                            00D9BB124CEF4A40BB2E8B25 /* ZERO_CHECK */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              DE65EFFD4A5C4FD9B338D491 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              7CDFBAC1A3FB480FB4755F02 /* WebcamFaceRec */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1BF296416D664E80AEAA1CF9 /* Source Files */,
+                            CAB36FD0606B4332A2BFB10F /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/CMakeLists.txt */,
+                     );
+                     name = WebcamFaceRec;
+                     sourceTree = "<group>";
+              };
+              1BF296416D664E80AEAA1CF9 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CA1F87EB4C854E75A4A78F10 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/ImageUtils_0.7.cpp */,
+                            34E8AA4856A2433C926D8F79 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/detectObject.cpp */,
+                            35429CF03DD74268877E9E83 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/main.cpp */,
+                            5BBCB3CC94B049939300CD85 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/preprocessFace.cpp */,
+                            7CB8203759ED4D7EBA208361 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/recognition.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              7B402C1E1A534A6484CECCCF /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            3F72C770433647B081006BB6 /* CMake Rules */,
+                            5B51315540044B27A7A8D421 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              3F72C770433647B081006BB6 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              00D9BB124CEF4A40BB2E8B25 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4EB415E4629B42789753CF0D /* CMake Rules */,
+                            BA77643A9ADD4D099CFEEC7F /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              4EB415E4629B42789753CF0D /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              72BE456212C1476A8EB241FF /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            EEA22E70B4B04A0B82DACDC3 /* WebcamFaceRec */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              822950F4ABD64D75BA9524B6 /* WebcamFaceRec */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 8263B73BD2394D29AB24C9C0 /* Build configuration list for PBXNativeTarget "WebcamFaceRec" */;
+                     buildPhases = (
+                            8862F4885429488D8E1318B0 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            338E6049D6C14CF2A1C3DCDB /* PBXTargetDependency */,
+                     );
+                     name = WebcamFaceRec;
+                     productName = WebcamFaceRec;
+                     productReference = EEA22E70B4B04A0B82DACDC3 /* WebcamFaceRec */;
+                     productType = "com.apple.product-type.tool";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              DBE71FA83EF64A48AB5765E2 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 547B3098BDE24702A4539B76 /* Build configuration list for PBXProject  "WebcamFaceRec" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            2C37B346856C4786B32BD3C2 /* Debug */,
+                            A21422F41A9F4BD0A824DDF8 /* Release */,
+                            7F01CB01D85843FEB7357602 /* MinSizeRel */,
+                            E40456047E984D45A9AC1FF0 /* RelWithDebInfo */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = C0A0BE72C70B445A9B412058;
+                     projectDirPath = "..";
+                     projectRoot = "";
+                     targets = (
+                            822950F4ABD64D75BA9524B6 /* WebcamFaceRec */,
+                            3051B07ACDDC47BD83763739 /* ALL_BUILD */,
+                            F2FCE8BEF0A3419EA7D0197E /* ZERO_CHECK */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              0DDEFA88B5424E6DB6D08D3E /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              FA1D519C7A4F4C829615C339 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build -f /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              E5DC8122CB6C4D1CBE0584E0 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              4C86285044CC4270B55C88F9 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build -f /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              8862F4885429488D8E1318B0 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            95B3327711DC44CAAEE4F993 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/ImageUtils_0.7.cpp */,
+                            B1130E988FC346F8A5A6791B /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/detectObject.cpp */,
+                            CAA05A1AB6E94DCD8B041A95 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/main.cpp */,
+                            B638201F594F49AAA8ECA253 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/preprocessFace.cpp */,
+                            A8AAE6EBCBC34C4CBC184C80 /* /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/recognition.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              338E6049D6C14CF2A1C3DCDB /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = F2FCE8BEF0A3419EA7D0197E /* ZERO_CHECK */;
+                     targetProxy = 6B437E2D7AFD4C6CAAA882FA /* PBXContainerItemProxy */;
+              };
+              050DBEC7270A49E681B34ECC /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 822950F4ABD64D75BA9524B6 /* WebcamFaceRec */;
+                     targetProxy = E6172DB0D40E44A1A59F2F33 /* PBXContainerItemProxy */;
+              };
+              075409FDD4A546129124D5AD /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = F2FCE8BEF0A3419EA7D0197E /* ZERO_CHECK */;
+                     targetProxy = F16F30D04CCF4E8490B7F197 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              B24177D010954599B0C3B568 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build/build;
+                     };
+                     name = Debug;
+              };
+              03FE4C9DD6074EB6AEC48362 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build/build;
+                     };
+                     name = Release;
+              };
+              93D65223D9F74CF3B9505301 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build/build;
+                     };
+                     name = MinSizeRel;
+              };
+              4777DB9F03D04BAA851CD5B7 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build/build;
+                     };
+                     name = RelWithDebInfo;
+              };
+              2DA11B15D1914D5FAFBF596E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    ";
+                            OTHER_CPLUSPLUSFLAGS = "    ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.9.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.9.dylib /usr/local/lib/libopencv_stitching.2.4.9.dylib /usr/local/lib/libopencv_contrib.2.4.9.dylib /usr/local/lib/libopencv_nonfree.2.4.9.dylib /usr/local/lib/libopencv_ocl.2.4.9.dylib /usr/local/lib/libopencv_gpu.2.4.9.dylib /usr/local/lib/libopencv_photo.2.4.9.dylib /usr/local/lib/libopencv_objdetect.2.4.9.dylib /usr/local/lib/libopencv_legacy.2.4.9.dylib /usr/local/lib/libopencv_video.2.4.9.dylib /usr/local/lib/libopencv_ml.2.4.9.dylib /usr/local/lib/libopencv_calib3d.2.4.9.dylib /usr/local/lib/libopencv_features2d.2.4.9.dylib /usr/local/lib/libopencv_highgui.2.4.9.dylib /usr/local/lib/libopencv_imgproc.2.4.9.dylib /usr/local/lib/libopencv_flann.2.4.9.dylib /usr/local/lib/libopencv_core.2.4.9.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = WebcamFaceRec;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B18F62064B7642C8B2FD84A6 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.9.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.9.dylib /usr/local/lib/libopencv_stitching.2.4.9.dylib /usr/local/lib/libopencv_contrib.2.4.9.dylib /usr/local/lib/libopencv_nonfree.2.4.9.dylib /usr/local/lib/libopencv_ocl.2.4.9.dylib /usr/local/lib/libopencv_gpu.2.4.9.dylib /usr/local/lib/libopencv_photo.2.4.9.dylib /usr/local/lib/libopencv_objdetect.2.4.9.dylib /usr/local/lib/libopencv_legacy.2.4.9.dylib /usr/local/lib/libopencv_video.2.4.9.dylib /usr/local/lib/libopencv_ml.2.4.9.dylib /usr/local/lib/libopencv_calib3d.2.4.9.dylib /usr/local/lib/libopencv_features2d.2.4.9.dylib /usr/local/lib/libopencv_highgui.2.4.9.dylib /usr/local/lib/libopencv_imgproc.2.4.9.dylib /usr/local/lib/libopencv_flann.2.4.9.dylib /usr/local/lib/libopencv_core.2.4.9.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = WebcamFaceRec;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              A4C8EF48CFDE4F72BD76B784 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.9.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.9.dylib /usr/local/lib/libopencv_stitching.2.4.9.dylib /usr/local/lib/libopencv_contrib.2.4.9.dylib /usr/local/lib/libopencv_nonfree.2.4.9.dylib /usr/local/lib/libopencv_ocl.2.4.9.dylib /usr/local/lib/libopencv_gpu.2.4.9.dylib /usr/local/lib/libopencv_photo.2.4.9.dylib /usr/local/lib/libopencv_objdetect.2.4.9.dylib /usr/local/lib/libopencv_legacy.2.4.9.dylib /usr/local/lib/libopencv_video.2.4.9.dylib /usr/local/lib/libopencv_ml.2.4.9.dylib /usr/local/lib/libopencv_calib3d.2.4.9.dylib /usr/local/lib/libopencv_features2d.2.4.9.dylib /usr/local/lib/libopencv_highgui.2.4.9.dylib /usr/local/lib/libopencv_imgproc.2.4.9.dylib /usr/local/lib/libopencv_flann.2.4.9.dylib /usr/local/lib/libopencv_core.2.4.9.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = WebcamFaceRec;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              7BFBA693D5034A528FC0F349 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "       -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+                            OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_videostab.2.4.9.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.9.dylib /usr/local/lib/libopencv_stitching.2.4.9.dylib /usr/local/lib/libopencv_contrib.2.4.9.dylib /usr/local/lib/libopencv_nonfree.2.4.9.dylib /usr/local/lib/libopencv_ocl.2.4.9.dylib /usr/local/lib/libopencv_gpu.2.4.9.dylib /usr/local/lib/libopencv_photo.2.4.9.dylib /usr/local/lib/libopencv_objdetect.2.4.9.dylib /usr/local/lib/libopencv_legacy.2.4.9.dylib /usr/local/lib/libopencv_video.2.4.9.dylib /usr/local/lib/libopencv_ml.2.4.9.dylib /usr/local/lib/libopencv_calib3d.2.4.9.dylib /usr/local/lib/libopencv_features2d.2.4.9.dylib /usr/local/lib/libopencv_highgui.2.4.9.dylib /usr/local/lib/libopencv_imgproc.2.4.9.dylib /usr/local/lib/libopencv_flann.2.4.9.dylib /usr/local/lib/libopencv_core.2.4.9.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = WebcamFaceRec;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              67F41BA93CC84F1FB549934F /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              D49BD951E05042BA8C152259 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              5D462D9922D045998A2F5251 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              A80813A191FE40FBB65CAC3E /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              A3748C853B5F410FAB405A0B /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              AF8BFE93DC494715B653AB9F /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              937469025A2C442499F15652 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              6B1838CBC27344C1B3686BF8 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include/opencv, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/taylor/dev/Capstone/Alfred/facerec/code/Chapter8_FaceRecognition/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              547B3098BDE24702A4539B76 /* Build configuration list for PBXProject  "WebcamFaceRec" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B24177D010954599B0C3B568 /* Debug */,
+                            03FE4C9DD6074EB6AEC48362 /* Release */,
+                            93D65223D9F74CF3B9505301 /* MinSizeRel */,
+                            4777DB9F03D04BAA851CD5B7 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              8263B73BD2394D29AB24C9C0 /* Build configuration list for PBXNativeTarget "WebcamFaceRec" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            2DA11B15D1914D5FAFBF596E /* Debug */,
+                            B18F62064B7642C8B2FD84A6 /* Release */,
+                            A4C8EF48CFDE4F72BD76B784 /* MinSizeRel */,
+                            7BFBA693D5034A528FC0F349 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              EDBDB15A5C8041EDA9BE3F47 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            67F41BA93CC84F1FB549934F /* Debug */,
+                            D49BD951E05042BA8C152259 /* Release */,
+                            5D462D9922D045998A2F5251 /* MinSizeRel */,
+                            A80813A191FE40FBB65CAC3E /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              C42A40CF3F564A4CA15D81A6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            A3748C853B5F410FAB405A0B /* Debug */,
+                            AF8BFE93DC494715B653AB9F /* Release */,
+                            937469025A2C442499F15652 /* MinSizeRel */,
+                            6B1838CBC27344C1B3686BF8 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = DBE71FA83EF64A48AB5765E2;
+}
