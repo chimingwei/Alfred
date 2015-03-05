@@ -17,11 +17,12 @@
  */
 
 #include "opencv2/opencv.hpp"
-#include "opencv2/core.hpp"
-#include "opencv2/face.hpp"
-#include "opencv2/highgui.hpp"
-#include "opencv2/imgproc.hpp"
-#include "opencv2/objdetect.hpp"
+#include "opencv2/contrib/contrib.hpp"
+// #include "opencv2/core.hpp"
+// #include "opencv2/face.hpp"
+// #include "opencv2/highgui.hpp"
+// #include "opencv2/imgproc.hpp"
+// #include "opencv2/objdetect.hpp"
 
 #include <iostream>
 #include <fstream>
@@ -150,8 +151,8 @@ int main(int argc, const char *argv[]) {
         int im_width = images[0].cols;
         int im_height = images[0].rows;
         // Create a FaceRecognizer and train it on the given images:
-        // Ptr<face::FaceRecognizer> model = face::createLBPHFaceRecognizer();
-        Ptr<face::FaceRecognizer> model = face::createEigenFaceRecognizer();
+        Ptr<FaceRecognizer> model = createLBPHFaceRecognizer();
+        // Ptr<FaceRecognizer> model = createEigenFaceRecognizer();
         // Ptr<face::FaceRecognizer> model = face::createFisherFaceRecognizer();
         // That's it for learning the Face Recognition model. You now
         // need to create the classifier for the task of Face Detection.
@@ -208,7 +209,7 @@ int main(int argc, const char *argv[]) {
                 cv::resize(face, face_resized, Size(im_width, im_height), 1.0, 1.0, INTER_CUBIC);
                 // Now perform the prediction, see how easy that is:
                 int prediction = model->predict(face_resized);
-		printf("\n%d",prediction);
+		          printf("\n%d",prediction);
                 // And finally write all we've found out to the original image!
                 // First of all draw a green rectangle around the detected face:
                 rectangle(original, face_i, CV_RGB(150,150,150), 1);

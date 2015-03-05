@@ -7,17 +7,18 @@
 
 CC            = gcc
 CXX           = g++
-DEFINES       =
-CFLAGS        = -O3 -Wall $(DEFINES)
-CXXFLAGS      = -O3 -Wall $(DEFINES)
-INCPATH       =
+CFLAGS        = -O3 -Wall
+CXXFLAGS      = -O3
+ARCFLAGS	  = $(CXXFLAGS) -fPIC -g
+INCPATH       =`pkg-config opencv --cflags`
 
 LINK          = gcc
 LINKXX        = g++
 
-LFLAGS        =
-LIBS          =
-PKGCFG        =`pkg-config opencv --cflags --libs`
+LFLAGS        = -shared
+LIBS          = `pkg-config opencv --libs`
+
+PKGCFG        = `pkg-config opencv --cflags --libs`
 
 
 DEL_FILE      = rm -f
@@ -27,30 +28,35 @@ SOURCES       = facial_recognition.cpp
 OBJECTS       = $(SOURCES:.cpp=.o)
 DESTDIR       =
 TARGET        = recog
+LIBSOURCES	  = facerec.cpp
+LIBOBJECTS    = $(LIBSOURCES:.cpp=.o)
+ARCHIVE       = librecog.so
 
 first: small
 
 small:
-	        $(CXX) $(CXXFLAGS) $(INCPATH) $(SOURCES) -o $(TARGET) $(PKGCFG)
-
+	$(CXX) $(CXXFLAGS) $(INCPATH) $(SOURCES) -o $(TARGET) $(PKGCFG)
 
 ####### Implicit rules
 .SUFFIXES: .c
 .c.o:
-	        $(CC) -c $(CFLAGS) $(INCPATH) -o "$@" "$<" $(LIBS)
+	$(CC) -c $(CFLAGS) $(INCPATH) -o "$@" "$<" $(LIBS)
 .SUFFIXES: .cpp
 .cpp.o:
-			$(CXX) -c $(CXXFLAGS) $(INCPATH) -o "$@" "$<" $(LIBS)
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o "$@" "$<" $(LIBS)
 
 ####### Build rules
-all:  $(TARGET)
-
-$(TARGET):  $(OBJECTS)
-			$(LINKXX) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(LIBS)
+sob:  $(ARCHIVE)
 
 
+$(ARCHIVE):  $(LIBOBJECTS)
+	$(LINKXX) $(LFLAGS) -o $(ARCHIVE) $(LIBOBJECTS) $(LIBS)
+
+$(LIBOBJECTS): $(LIBSOURCES)
+	$(CXX) -c $(ARCFLAGS) $(INCPATH) -o "$@" "$<" $(LIBS)
 clean:
-			-$(DEL_FILE) $(OBJECTS)
-
+	-$(DEL_FILE) $(OBJECTS)
+cleanlib:
+	-$(DEL_FILE) $(LIBOBJECTS) $(ARCHIVE)
 distclean: clean
-			-$(DEL_FILE) $(TARGET)
+	-$(DEL_FILE) $(TARGET)
