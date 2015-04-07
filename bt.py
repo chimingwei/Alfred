@@ -1,16 +1,18 @@
+#24.0:22.5:22:830
 import Adafruit_BBIO.UART as UART
 import serial
 UART.setup("UART1")
-
-ser = serial.Serial(port="/dev/ttyO1", baudrate=9600)
+weatherJsonResponse = "nothing"
+ser = serial.Serial(port="/dev/ttyO1", baudrate=115200)
 ser.close()
 ser.open()
 while True:
     if ser.isOpen():
-        weatherInfo = ser.read(12)
-        weatherInfo.split(':')
-        weatherJsonResponse = "{\"humidity\":"+weatherInfo[0]
-+",\"temp1\":"+weatherInfo[1]
-+",\"temp2\":"+weatherInfo[2]
-+",\"pressure\":"+weatherInfo[3]+"}"
+        weatherInfo = ser.read(16)
+        weatherArray = weatherInfo.split(':')
+        weatherJsonResponse = "{\"humidity\":\""+weatherArray[0]+"\",\"temp1\":\""+weatherArray[1]+"\",\"temp2\":\""+weatherArray[2]+"\",\"pressure\":\""+weatherArray[3]+"\"}"
+        json_file = open("weather.json", "w")
+        json_file.write(weatherJsonResponse)
+        json_file.close()
 ser.close()
+
