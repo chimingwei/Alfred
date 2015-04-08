@@ -1,0 +1,3 @@
+[submodule "PRU"]
+	path = PRU
+	url = https://github.com/luigif/hcsr04.git
