@@ -7,62 +7,76 @@
 
 <script src="jquery-1.11.2.min.js"></script>
 <script src="test.js"></script>
-<!--<script src="data.json">
-obj = JSON.parse(text);
-document.getElementById("cards").innerHTML =
-obj.employees[1].firstName + " " + obj.employees[1].lastName;
-</script> -->
+
+<script>
+
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+
+</script>
+
 
 
 </head>
 
-<body onload = "swirl()">
+<body>
+
 <h1>Alfred</h1>
 <h2>The Smart Mirror</h2>
 
+<!-- <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+ -->
 <!-- <script type="text/javascript">
-    
+
     $.getJSON('data.json', function(data){
     alert("This is the Data" + items["1.summary"])});
 </script> -->
 
-<!--
-<script>
-$(function swirl(){
-$(".cards").toggleClass("flip");
-});
 
-$(function swirl(){
-$(".cards2").toggleClass("flip2");
-});
-
-$(function swirl(){
-$(".cards3").toggleClass("flip3");
-});
-
-$(function swirl(){
-$(".cards4").toggleClass("flip4");
-});
-</script>
-
--->
 
 <div class="cards">
-<h2>London</h2>
+
+<h2>Google Calendar</h2>
 <p id="info"></p>
 
-<script src="data.json">
-obj = JSON.parse(calData);
-document.getElementById("info").innerHTML =
-obj.items[1].status + " " + obj.items[1].kind;
+<script>
+$.getJSON("http://localhost/data.json", function(json) {
+  document.getElementById("info").innerHTML =
+  json.items[1].creator.displayName + "<br><br>" + json.items[1].summary + " at "+ json.items[1].start.dateTime + "<br><br>" + json.items[2].summary + " at "+ json.items[2].start.dateTime + "<br><br>" + json.items[3].summary + " at "+ json.items[3].start.dateTime + "<br><br>" + json.items[4].summary + " at "+ json.items[4].start.dateTime + "<br><br>" + json.items[5].summary + " at "+ json.items[5].start.dateTime;
+});
 </script>
 
+<!--
+<script>
+var json = require('data.json');
+obj = JSON.parse(json);
+document.getElementById("info").innerHTML =
+obj.calData.items[0].status;
+</script>
+-->
+
+
+<!--
+<script>
+$.getJSON("data.json", function(json) {
+console.log(json);
+});
+</script>
+-->
 </div>
 
 <div class="cards2">
-<h2>Paris</h2>
-<p id="demo"></p>
-<script>
+<h2>Help Page</h2>
+<p id="demo">Clicking the left most icon brings up the Google Calender Information. Clicking the Second icon brings up this help page. Clicking the third icon brings up the Weather Data. Clicking the fourth or fifth icons bring up the Facebook feed. To close a window press the icon a second time using buttons or touchscreen. <br> Google Calender Data is accurate within the last rhity minutes. All Weather Data has been collected by the Weather Box and has been updated within the past minute. If the Weather Box is not in range of is turned off, the weather data displayed is the last known data.</p>
+<!--<script>
 var text = '{"employees":[' +
 '{"firstName":"John","lastName":"Doe" },' +
 '{"firstName":"Anna","lastName":"Smith" },' +
@@ -71,87 +85,64 @@ var text = '{"employees":[' +
 obj = JSON.parse(text);
 document.getElementById("demo").innerHTML =
 obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script> -->
+</div>
+
+<div  class="cards3" onload="JavaScript:timedRefresh(5000);">
+<h2>Weather Data</h2>
+<p id="wd"></p>
+<script>
+$.getJSON("http://localhost/weather.json", function(json) {
+  document.getElementById("wd").innerHTML =
+  "Humidity:" + " " + json.humidity + " % <br><br>" + "Temperature:" + " " + json.temp1 + " F <br><br>" + "Pressure:" + " " + json.pressure+ " hPa <br><br>";
+});
 </script>
 </div>
 
-<div class="cards3">
-<h2>Tokyo</h2>
-<p>Items on the Machine are as follows:
-Weather
-Calender
-Notes/Reminders
-Facebook
-Skype</p>
+<div class="cards4">
+<!-- <div class="fb-page" data-href="https://www.facebook.com/cubuffsoccer" data-width="280" data-height="298" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"></div> -->
 </div>
 
-<div class="cards4"></div>
-
-<div id="mainB">
-  <div class="bg">
+ <div id="mainB">
+ <div class="bg">
      <div class="bg1">
 
      </div>
   </div>
 </div>
 <div class="over">
-  <div class="dial">
-    <div class="grad">
-        
-    </div>
-  </div>
   <div class="container">
   <div class="nav">
     <ul id="nav">
-      <li id="email">
+      <li id="calendar">
         <a>
-          <img src="iemail.png" />
+          <img src="icons/gcal.png" />
         </a>
       </li>
       <li id="skype">
         <a>
-          <img src="iphoto.png" />
+          <img src="icons/help.png" />
         </a>
       </li>
-      <li id="cloud" class="active">
+      <li id="weather">
         <a>
-          <img src="icloud.png" />
-        </a>
-      </li>
-      <li id="portfolio">
-        <a>
-          <img src="portfolio.png" />
+          <img src="icons/weather.png" />
         </a>
       </li>
       <li id="settings">
         <a>
-          <img src="settings.png" />
+          <img src="icons/help.png" />
         </a>
       </li>
+<!--       <li id="settings">
+        <a>
+          <img src="settings.png" />
+        </a>
+      </li> -->
     </ul>
   </div>
   </div>
 </div>
-
-<!-- 
-
-<nav class="circular-menu">
-
-  <div class="circle">
-  
-    <a href="" class="fa fa-home fa-2x"></a>
-    <a href="http://www.facebook.com" class="fa fa-facebook fa-2x"></a>
-    <a href="" class="fa fa-twitter fa-2x"></a>
-    <a href="" class="fa fa-linkedin fa-2x"></a>
-    <a href="" class="fa fa-github fa-2x"></a>
-    <a href="" class="fa fa-rss fa-2x"></a>
-    <a href="" class="fa fa-pinterest fa-2x"></a>
-    <a href="" class="fa fa-asterisk fa-2x"></a>
-  </div>
-  
-  <a href="" class="menu-button fa fa-bars fa-2x"></a>
-
-</nav>
--->
 
 
 
