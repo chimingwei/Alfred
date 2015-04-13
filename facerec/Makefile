@@ -46,7 +46,7 @@ small:
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o "$@" "$<" $(LIBS)
 
 ####### Build rules
-sob:  $(ARCHIVE)
+so:  $(ARCHIVE)
 
 
 $(ARCHIVE):  $(LIBOBJECTS)

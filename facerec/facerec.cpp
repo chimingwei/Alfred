@@ -180,8 +180,8 @@ extern "C" int predict(){
         cerr << "Capture Device ID " << deviceId << "cannot be opened." << endl;
         return -1;
     }
-    cap.set(CV_CAP_PROP_FRAME_WIDTH, 352);
-    cap.set(CV_CAP_PROP_FRAME_HEIGHT, 288);
+//     cap.set(CV_CAP_PROP_FRAME_WIDTH, 352);
+//     cap.set(CV_CAP_PROP_FRAME_HEIGHT, 288);
     // Holds the current frame from the Video device:
     Mat frame;
     for(;;) {
