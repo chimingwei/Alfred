@@ -144,6 +144,27 @@ $.getJSON("http://localhost/weather.json", function(json) {
   </div>
 </div>
 
+<script type="text/javascript" src="shortcut.js"></script>
+<script>
+    shortcut.add("w", function() {
+        console.info("Calendar selected (button)");
+		document.getElementById("calendar").click();
+    });
+    shortcut.add("a", function() {
+        console.info("Skype selected (button)");
+		document.getElementById("skype").click();
+    });
+	shortcut.add("s", function() {
+        console.info("Weather selected (button)");
+		document.getElementById("weather").click();
+    });
+    shortcut.add("d", function() {
+        console.info("Settings selected (button)");
+		document.getElementById("settings").click();
+    });
+</script>
+
+
 
 
 </body>
