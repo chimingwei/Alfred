@@ -29,10 +29,10 @@
 						Bit 4: 1 - Pull up, 0 - Pull down
 						Bit 5: 1 - Input, 0 – Output
 					*/
-          0x19c 0x27 /* P9_28 in pulldown Mode: 7 */
-          0x194 0x27 /* P9_29 in pulldown Mode: 7 */
-          0x198 0x07 /* P9_30 out pulldown Mode: 7 */
-          0x190 0x07 /* P9_31 out pulldown Mode: 7 */
+          0x19c 0x27 /* P9_28 in pulldown Mode: 7 ECHO1 */
+          0x194 0x07 /* P9_29 out pulldown Mode: 7 TRIGGER1 */
+          0x198 0x27 /* P9_30 in pulldown Mode: 7 ECHO2 */
+          0x190 0x07 /* P9_31 out pulldown Mode: 7 TRIGGER2 */
           >;
       };
     };
