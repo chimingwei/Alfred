@@ -1,0 +1,12 @@
+#!/bin/sh
+export GOOGLE_API_KEY="no"
+export GOOGLE_DEFAULT_CLIENT_ID="no"
+export GOOGLE_DEFAULT_CLIENT_SECRET="no"
+export DISPLAY=':0' 
+sudo modprobe uinput
+python -m SimpleHTTPServer 3333 &
+php -S 192.168.1.5:3232 -t /home/debian/Alfred/signinUI/ &
+sudo python /home/debian/Alfred/UI/keypoller.py &
+sudo /home/debian/Alfred/bt &
+chromium --kiosk /home/debian/Alfred/UI/test.html &
+

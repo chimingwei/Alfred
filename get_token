@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+'''
+        -req Get access token
+        -auth Authenticate and get berer token
+
+'''
+import sys 
+from os import system
+import json
+if any("-req" in s for s in sys.argv):
+        system('rm auth.json')
+        print "Requesting token"
+        system('curl -d "client_id=805034040388-3d7m4m13o75ar9heq5se3u2n60eib9aq.apps.googleusercontent.com&scope=email https://www.googleapis.com/auth/calendar.readonly" https://accounts.google.com/o/oauth2/device/code >> auth.json')
+
+
+f = open('auth.json')
+jsonf = json.loads(f.read())
+
+
+if any("-auth" in s for s in sys.argv):
+        system('curl -d "client_id=805034040388-3d7m4m13o75ar9heq5se3u2n60eib9aq.apps.googleusercontent.com&client_secret=cYpuaguhAvudT7JdYxHNW35p&code='+jsonf["device_code"]+'&grant_type=http://oauth.net/grant_type/device/1.0" https://www.googleapis.com/oauth2/v3/token >> tmp.json')
+
+if any("-get" in s for s in sys.argv):
+        f = open('./'+sys.argv[2]+'.json')
+        jsonf = json.loads(f.read())
+        system('curl -H "Authorization: Bearer ' + jsonf["access_token"] + '" https://www.googleapis.com/calendar/v3/calendars/primary/events')

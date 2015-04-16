@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+div#overlay {
+	display: none;
+	z-index: 2;
+	background: #000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+div#wrapper {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	padding-left:24px;
+}
+</style>
+<div id="overlay"></div>
 <title>Alfred</title>
 
 <link rel= "stylesheet" href="test1.css">
@@ -16,8 +36,59 @@ function timedRefresh(timeoutPeriod) {
 
 </script>
 
+<script>
+function toggleOverlay(){
+	var overlay = document.getElementById('overlay');
+	overlay.style.opacity = 1;
+	if(overlay.style.display == "block"){
+		overlay.style.display = "none";
+	} else {
+		overlay.style.display = "block";
+	}
+}
+function enableOverlay(){
+        var overlay = document.getElementById('overlay');
+        overlay.style.opacity = 1;
+        overlay.style.display = "block";
+}
 
-
+function disableOverlay(){
+        var overlay = document.getElementById('overlay');
+        overlay.style.opacity = 0;
+        overlay.style.display = "none";
+}
+</script>
+<script type="text/javascript" src="shortcut.js"></script>
+<script>
+    shortcut.add("w", function() {
+        console.info("Calendar selected (button)");
+		document.getElementById("calendar").click();
+    });
+    shortcut.add("a", function() {
+        console.info("Skype selected (button)");
+		document.getElementById("skype").click();
+    });
+	shortcut.add("s", function() {
+        console.info("Weather selected (button)");
+		document.getElementById("weather").click();
+    });
+    shortcut.add("d", function() {
+        console.info("Settings selected (button)");
+		document.getElementById("settings").click();
+    });
+	shortcut.add("x", function() {
+        console.info("Overlay Toggled");
+		toggleOverlay();
+    });
+        shortcut.add("y", function() {
+         console.info("Overlay Enabled");
+              enableOverlay();
+    });
+        shortcut.add("z", function() {
+         console.info("Overlay Disabled");
+              disableOverlay();
+      });
+</script>
 </head>
 
 <body>
@@ -48,7 +119,7 @@ function timedRefresh(timeoutPeriod) {
 <p id="info"></p>
 
 <script>
-$.getJSON("http://localhost/data.json", function(json) {
+$.getJSON("http://localhost:3333/data.json", function(json) {
   document.getElementById("info").innerHTML =
   json.items[1].creator.displayName + "<br><br>" + json.items[1].summary + " at "+ json.items[1].start.dateTime + "<br><br>" + json.items[2].summary + " at "+ json.items[2].start.dateTime + "<br><br>" + json.items[3].summary + " at "+ json.items[3].start.dateTime + "<br><br>" + json.items[4].summary + " at "+ json.items[4].start.dateTime + "<br><br>" + json.items[5].summary + " at "+ json.items[5].start.dateTime;
 });
@@ -92,7 +163,7 @@ obj.employees[1].firstName + " " + obj.employees[1].lastName;
 <h2>Weather Data</h2>
 <p id="wd"></p>
 <script>
-$.getJSON("http://localhost/weather.json", function(json) {
+$.getJSON("http://localhost:3333/weather.json", function(json) {
   document.getElementById("wd").innerHTML =
   "Humidity:" + " " + json.humidity + " % <br><br>" + "Temperature:" + " " + json.temp1 + " F <br><br>" + "Pressure:" + " " + json.pressure+ " hPa <br><br>";
 });
@@ -143,29 +214,6 @@ $.getJSON("http://localhost/weather.json", function(json) {
   </div>
   </div>
 </div>
-
-<script type="text/javascript" src="shortcut.js"></script>
-<script>
-    shortcut.add("w", function() {
-        console.info("Calendar selected (button)");
-		document.getElementById("calendar").click();
-    });
-    shortcut.add("a", function() {
-        console.info("Skype selected (button)");
-		document.getElementById("skype").click();
-    });
-	shortcut.add("s", function() {
-        console.info("Weather selected (button)");
-		document.getElementById("weather").click();
-    });
-    shortcut.add("d", function() {
-        console.info("Settings selected (button)");
-		document.getElementById("settings").click();
-    });
-</script>
-
-
-
 
 </body>
 </html>
