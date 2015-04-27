@@ -2,10 +2,20 @@
 from ctypes import cdll
 import uinput
 import json
+import serial
 import time
-# import sys
 import os
+
 # ####### DEFINES ########
+
+
+def parseWeather(weatherInfo):
+    weatherArray = weatherInfo.split(':')
+    weatherJsonResponse = "{\"humidity\":\""+weatherArray[0]+"\",\"temp1\":\""+weatherArray[1]+"\",\"temp2\":\""+weatherArray[2]+"\",\"pressure\":\""+weatherArray[3]+"\"}"
+#     print weatherJsonResponse
+    json_file = open("weather.json", "w")
+    json_file.write(weatherJsonResponse)
+    json_file.close()
 
 
 def createArray():
@@ -37,18 +47,12 @@ print "Waiting for user."
 
 print "User Detected."
 detectedUser = recognizer.predict()
-print("User: " + detectedUser)
+# print("User: " + detectedUser)
 
 
-if detectedUser != '-1':
-    # ADD ARRAY SHIT HERE
-    f = open('./'+users[detectedUser]+'.json')
-    jsonf = json.loads(f.read())
-    os.system('curl -H "Authorization: Bearer ' + jsonf["access_token"] +
-              '" https://www.googleapis.com/calendar/v3/calendars/primary/' +
-              'events >> data.json')
-    f.close()
-
+# KNOWN USER
+if detectedUser != -1:
+    filename = './'+users[detectedUser]+'.json'
 
 #  UNKNOWN USER
 else:
@@ -56,33 +60,58 @@ else:
     os.system('rm auth.json')
     print "Requesting token"
     os.system('curl -d "client_id=805034040388-3d7m4m13o75ar9heq5se3u2n60eib' +
-              '9aq.apps.googleusercontent.com&scope=email https://www.google' +
-              'apis.com/auth/calendar.readonly" https://accounts.google.com/' +
-              'o/oauth2/device/code >> auth.json')
+              '9aq.apps.googleusercontent.com&scope=profile https://www.goog' +
+              'leapis.com/auth/calendar.readonly" https://accounts.google.co' +
+              'm/o/oauth2/device/code >> auth.json')
     f = open('auth.json')
     jsonf = json.loads(f.read())
     f.close()
-    os.system('curl -d "client_id=805034040388-3d7m4m13o75ar9heq5se3u2n60eib' +
-              '9aq.apps.googleusercontent.com&client_secret=cYpuaguhAvudT7Jd' +
-              'YxHNW35p&code='+jsonf["device_code"]+'&grant_type=http://oaut' +
-              'h.net/grant_type/device/1.0" https://www.googleapis.com/oauth' +
-              '2/v3/token >> tmp.json')
-    r = open('tmp.json')
-    jsonr = json.loads(r.read())
-    while jsonr["error"]:
-            time.sleep(6)
-            os.system('rm tmp.json && curl -d "client_id=805034040388-3d7m4m' +
-                      '13o75ar9heq5se3u2n60eib9aq.apps.googleusercontent.com' +
-                      '&client_secret=cYpuaguhAvudT7JdYxHNW35p&code=' +
-                      jsonf["device_code"]+'&grant_type=http://oauth.net/gra' +
-                      'nt_type/device/1.0" https://www.googleapis.com/oauth2' +
-                      '/v3/token >> tmp.json')
-            r = open('tmp.json')
-            jsonr = json.loads(r.read())
-            r.close()
-# rename file to username
-    recognizer.add_user('')
+    unauthorized = True
+    filename = 'tmp.json'
+    while unauthorized:
+        r = open(filename)
+        jsonr = json.loads(r.read())
+        r.close()
+        os.system('rm tmp.json && curl -d "client_id=805034040388-3d7m4m' +
+                  '13o75ar9heq5se3u2n60eib9aq.apps.googleusercontent.com' +
+                  '&client_secret=cYpuaguhAvudT7JdYxHNW35p&code=' +
+                  jsonf["device_code"]+'&grant_type=http://oauth.net/gra' +
+                  'nt_type/device/1.0" https://www.googleapis.com/oauth2' +
+                  '/v3/token >> tmp.json')
+        unauthorized = jsonr["error"]
+        time.sleep(6)
 
-# device.emit_click(uinput.KEY_Z)  # Overlay on
-# device.emit_click(uinput.KEY_Y)
+
+# GET USER INFO
+    r = open(filename)
+    jsonr = json.loads(r.read())
+    r.close()
+    os.system('curl -H "Authorization: Bearer ' + jsonr["access_token"] +
+              '" https://www.googleapis.com/calendar/v3/calendars/primary/' +
+              'events >> caldata.json')
+    os.system('curl -H "Authorization: Bearer ' + jsonr["access_token"] +
+              '" https://www.googleapis.com/auth/plus.me ' +
+              '>> userdata.json')
+    u = open('userdata.json')
+    userData = json.loads(u.read())
+    u.close()
+    if detectedUser == -1:
+        os.system('cp tmp.json ' + userData["familyname"] + '.'
+                  + userData["givenName"] + '.json && rm tmp.json')
+        # rename file to username
+        recognizer.add_user(userData["familyName"]+'.'+userData["givenName"])
+
+device.emit_click(uinput.KEY_Z)  # Overlay on
+# ADD ARDUINO HOLD HERE
+distance = 10000
+while distance > 100:
+    ser = serial.Serial(port="/dev/ttyO1", baudrate=115200)
+    ser.close()
+    ser.open()
+    if ser.isOpen():
+        arduinoInfo = ser.read(16)
+        [distance, weatherInfo] = arduinoInfo.split(',') 
+    ser.close()
+
+device.emit_click(uinput.KEY_Y)
 os.system('rm data.json')
