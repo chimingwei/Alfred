@@ -1,64 +1,88 @@
 #!/usr/bin/env python
 from ctypes import cdll
 import uinput
-import gflags
-import httplib2
-import urllib2
 import json
 import time
-import sys
-from os import system
+# import sys
+import os
+# ####### DEFINES ########
 
-######## DEFINES ########
 
+def createArray():
+    label = 0
+    userArray = [0 for x in range(20)]
+    for dirname, dirnames, filenames in os.walk("faces/"):
+        for subdirname in dirnames:
+            # subject_path = os.path.join(dirname, subdirname)
+            subject_path = subdirname
+            userArray[label] = subject_path
+            label = label + 1
+            print subject_path + " " + str(label)
+    return userArray
 
-######### SETUP #########
+# ######## SETUP #########
 device = uinput.Device([
-        uinput.KEY_Y,
-        uinput.KEY_Z,
-	])
-
+    uinput.KEY_Y,
+    uinput.KEY_Z,
+    ])
 
 recognizer = cdll.LoadLibrary('./librecog.so')
 recognizer.init()
 
-
-######### CODE ###########
-
+users = createArray()
+# ######## CODE ###########
 print "Waiting for user."
 
-#ADD SERIAL CODE HERE
+# ADD SERIAL CODE HERE
 
 print "User Detected."
 detectedUser = recognizer.predict()
-print("User: "detectedUser)
+print("User: " + detectedUser)
+
+
 if detectedUser != '-1':
-    #ADD ARRAY SHIT HERE
+    # ADD ARRAY SHIT HERE
     f = open('./'+users[detectedUser]+'.json')
-        jsonf = json.loads(f.read())
-        system('curl -H "Authorization: Bearer ' + jsonf["access_token"] + '" https://www.googleapis.com/calendar/v3/calendars/primary/events >> data.json')
-        f.close()
-#UNKNOWN USER
+    jsonf = json.loads(f.read())
+    os.system('curl -H "Authorization: Bearer ' + jsonf["access_token"] +
+              '" https://www.googleapis.com/calendar/v3/calendars/primary/' +
+              'events >> data.json')
+    f.close()
+
+
+#  UNKNOWN USER
 else:
-    #PRINT QR CODE HERE
-    system('rm auth.json')
+    #  PRINT QR CODE HERE
+    os.system('rm auth.json')
     print "Requesting token"
-    system('curl -d "client_id=805034040388-3d7m4m13o75ar9heq5se3u2n60eib9aq.apps.googleusercontent.com&scope=email https://www.googleapis.com/auth/calendar.readonly" https://accounts.google.com/o/oauth2/device/code >> auth.json')
+    os.system('curl -d "client_id=805034040388-3d7m4m13o75ar9heq5se3u2n60eib' +
+              '9aq.apps.googleusercontent.com&scope=email https://www.google' +
+              'apis.com/auth/calendar.readonly" https://accounts.google.com/' +
+              'o/oauth2/device/code >> auth.json')
     f = open('auth.json')
     jsonf = json.loads(f.read())
     f.close()
-    system('curl -d "client_id=805034040388-3d7m4m13o75ar9heq5se3u2n60eib9aq.apps.googleusercontent.com&client_secret=cYpuaguhAvudT7JdYxHNW35p&code='+jsonf["device_code"]+'&grant_type=http://oauth.net/grant_type/device/1.0" https://www.googleapis.com/oauth2/v3/token >> tmp.json')
+    os.system('curl -d "client_id=805034040388-3d7m4m13o75ar9heq5se3u2n60eib' +
+              '9aq.apps.googleusercontent.com&client_secret=cYpuaguhAvudT7Jd' +
+              'YxHNW35p&code='+jsonf["device_code"]+'&grant_type=http://oaut' +
+              'h.net/grant_type/device/1.0" https://www.googleapis.com/oauth' +
+              '2/v3/token >> tmp.json')
     r = open('tmp.json')
     jsonr = json.loads(r.read())
     while jsonr["error"]:
-            time.sleep(6) 
-            system('rm tmp.json && curl -d "client_id=805034040388-3d7m4m13o75ar9heq5se3u2n60eib9aq.apps.googleusercontent.com&client_secret=cYpuaguhAvudT7JdYxHNW35p&code='+jsonf["device_code"]+'&grant_type=http://oauth.net/grant_type/device/1.0" https://www.googleapis.com/oauth2/v3/token >> tmp.json')
+            time.sleep(6)
+            os.system('rm tmp.json && curl -d "client_id=805034040388-3d7m4m' +
+                      '13o75ar9heq5se3u2n60eib9aq.apps.googleusercontent.com' +
+                      '&client_secret=cYpuaguhAvudT7JdYxHNW35p&code=' +
+                      jsonf["device_code"]+'&grant_type=http://oauth.net/gra' +
+                      'nt_type/device/1.0" https://www.googleapis.com/oauth2' +
+                      '/v3/token >> tmp.json')
             r = open('tmp.json')
-            jsonr = json.loads(r.read()) 
+            jsonr = json.loads(r.read())
             r.close()
-#rename file to username
+# rename file to username
     recognizer.add_user('')
 
-device.emit_click(uinput.KEY_Z)#Overlay on
-device.emit_click(uinput.KEY_Y)
-system('rm data.json')
+# device.emit_click(uinput.KEY_Z)  # Overlay on
+# device.emit_click(uinput.KEY_Y)
+os.system('rm data.json')
