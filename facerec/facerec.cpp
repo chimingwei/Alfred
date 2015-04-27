@@ -1,10 +1,10 @@
 #include "opencv2/opencv.hpp"
-//#include "opencv2/contrib/contrib.hpp"
-#include "opencv2/core.hpp"
-#include "opencv2/face.hpp"
-#include "opencv2/highgui.hpp"
-#include "opencv2/imgproc.hpp"
-#include "opencv2/objdetect.hpp"
+#include "opencv2/contrib/contrib.hpp"
+//#include "opencv2/core.hpp"
+//#include "opencv2/face.hpp"
+//#include "opencv2/highgui.hpp"
+//#include "opencv2/imgproc.hpp"
+//#include "opencv2/objdetect.hpp"
 
 #include <iostream>
 #include <fstream>
@@ -21,7 +21,7 @@ using namespace std;
 string fn_lbp;
 string fn_csv;
 int deviceId;
-Ptr<face::FaceRecognizer> model;
+Ptr<FaceRecognizer> model;
 int im_width;
 int im_height;
 const int samplesToTake = 10;
@@ -92,7 +92,7 @@ extern "C" int add_user(const char* userName){
                 Mat face = Mat(original,faces[i]);;
                 // Resize images.
                 Mat face_resized;
-                cv::resize(face, face_resized, Size(300, 300), 1.0, 1.0, INTER_CUBIC);
+                resize(face, face_resized, Size(300, 300), 1.0, 1.0, INTER_CUBIC);
                 sprintf(imName,"faces/%s/%s%d.jpg",userName,userName,j);
                 imwrite(imName,face_resized);
 		j++;
@@ -130,7 +130,7 @@ extern "C" void read_csv(const string& filename, vector<Mat>& images, vector<int
 extern "C" void init(){
     fn_lbp = string("lbpcascades/lbpcascade_frontalface.xml");
     fn_csv = string("faces.csv");
-    deviceId = atoi("video0");
+    deviceId =1; 
 
     // These vectors hold the images and corresponding labels:
     vector<Mat> images;
@@ -138,7 +138,7 @@ extern "C" void init(){
     // Read in the data (fails if no valid input filename is given, but you'll get an error message):
     try {
         read_csv(fn_csv, images, labels);
-    } catch (cv::Exception& e) {
+    } catch (Exception& e) {
         cerr << "Error opening file \"" << fn_csv << "\". Reason: " << e.msg << endl;
         // nothing more we can do
         exit(1);
@@ -146,7 +146,7 @@ extern "C" void init(){
     im_width = images[0].cols;
     im_height = images[0].rows;
     // Create a FaceRecognizer and train it on the given images:
-    model = face::createLBPHFaceRecognizer();
+    model = createLBPHFaceRecognizer();
     model->train(images, labels);
 }
 
@@ -163,8 +163,8 @@ extern "C" int predict(){
         cerr << "Capture Device ID " << deviceId << "cannot be opened." << endl;
         return -1;
     }
-     cap.set(CV_CAP_PROP_FRAME_WIDTH, 640);
-     cap.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+     //cap.set(CV_CAP_PROP_FRAME_WIDTH, 640);
+     //cap.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
 //     cap.set(CV_CAP_PROP_FOURCC, CV_FOURCC('H', '2', '6', '4'));
     // Holds the current frame from the Video device:
     Mat frame;
@@ -188,8 +188,8 @@ extern "C" int predict(){
             cv::resize(face, face_resized, Size(im_width, im_height), 1.0, 1.0, INTER_CUBIC);
 
             int prediction = model->predict(face_resized);
-	    double confidence = 0.0;
-	    model->predict(face_resized,prediction,confidence);
+	          double confidence = 0.0;
+	          model->predict(face_resized,prediction,confidence);
 
             if(i<samplesToTake-1){
 //                 averagePrediction[sampleCount] =prediction>3000?prediction:-1;

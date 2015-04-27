@@ -3,6 +3,7 @@ export GOOGLE_API_KEY="no"
 export GOOGLE_DEFAULT_CLIENT_ID="no"
 export GOOGLE_DEFAULT_CLIENT_SECRET="no"
 export DISPLAY=':0' 
+xinput set-prop 'eGalax Inc. USB TouchController' --type=float 'Coordinate Transformation Matrix' 0.22694 0.00000 0.39971 0.00000 0.24479 0.72656 0.00000 0.00000 1.00000
 sudo modprobe uinput
 python -m SimpleHTTPServer 3333 &
 php -S 192.168.1.5:3232 -t /home/debian/Alfred/signinUI/ &
