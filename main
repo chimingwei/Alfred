@@ -47,7 +47,7 @@ print "Waiting for user."
 
 print "User Detected."
 detectedUser = recognizer.predict()
-# print("User: " + detectedUser)
+print("User: " + users[detectedUser])
 
 
 # KNOWN USER
@@ -105,11 +105,11 @@ device.emit_click(uinput.KEY_Z)  # Overlay on
 # ADD ARDUINO HOLD HERE
 distance = 10000
 while distance > 100:
-    ser = serial.Serial(port="/dev/ttyO1", baudrate=115200)
+    ser = serial.Serial(port="/dev/ttyACM0", baudrate=115200)
     ser.close()
     ser.open()
     if ser.isOpen():
-        arduinoInfo = ser.read(16)
+        arduinoInfo = ser.readline()
         [distance, weatherInfo] = arduinoInfo.split(',') 
     ser.close()
 
