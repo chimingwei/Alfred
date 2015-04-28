@@ -83,23 +83,24 @@ else:
 
 
 # GET USER INFO
-    r = open(filename)
-    jsonr = json.loads(r.read())
-    r.close()
-    os.system('curl -H "Authorization: Bearer ' + jsonr["access_token"] +
-              '" https://www.googleapis.com/calendar/v3/calendars/primary/' +
-              'events >> caldata.json')
-    os.system('curl -H "Authorization: Bearer ' + jsonr["access_token"] +
-              '" https://www.googleapis.com/auth/plus.me ' +
-              '>> userdata.json')
-    u = open('userdata.json')
-    userData = json.loads(u.read())
-    u.close()
-    if detectedUser == -1:
-        os.system('cp tmp.json ' + userData["familyname"] + '.'
-                  + userData["givenName"] + '.json && rm tmp.json')
-        # rename file to username
-        recognizer.add_user(userData["familyName"]+'.'+userData["givenName"])
+r = open(filename)
+jsonr = json.loads(r.read())
+r.close()
+os.system('curl -H "Authorization: Bearer ' + jsonr["access_token"] +
+          '" https://www.googleapis.com/calendar/v3/calendars/primary/' +
+          'events >> caldata.json')
+os.system('curl -H "Authorization: Bearer ' + jsonr["access_token"] +
+          '" https://www.googleapis.com/auth/plus.me ' +
+          '>> userdata.json')
+u = open('userdata.json')
+userData = json.loads(u.read())
+u.close()
+if detectedUser == -1:
+    os.system('cp tmp.json ' + userData["familyname"] + '.'
+              + userData["givenName"] + '.json && rm tmp.json')
+    # rename file to username
+    recognizer.add_user(userData["familyName"]+'.'+userData["givenName"])
+
 
 device.emit_click(uinput.KEY_Z)  # Overlay on
 # ADD ARDUINO HOLD HERE
