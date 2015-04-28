@@ -19,15 +19,14 @@ def parseWeather(weatherInfo):
 
 
 def createArray():
-    label = 0
+    label = 0 
     userArray = [0 for x in range(20)]
     for dirname, dirnames, filenames in os.walk("faces/"):
         for subdirname in dirnames:
             # subject_path = os.path.join(dirname, subdirname)
-            subject_path = subdirname
-            userArray[label] = subject_path
+            # subject_path = subdirname
+            userArray[label] = subdirname
             label = label + 1
-            print subject_path + " " + str(label)
     return userArray
 
 # ######## SETUP #########
@@ -47,17 +46,17 @@ print "Waiting for user."
 
 print "User Detected."
 detectedUser = recognizer.predict()
-print("User: " + users[detectedUser])
 
 
 # KNOWN USER
-if detectedUser != -1:
-    filename = './'+users[detectedUser]+'.json'
+if detectedUser > (-1):
+    print("User: " + str(users[detectedUser]))
+    filename = './'+str(users[detectedUser])+'.json'
 
 #  UNKNOWN USER
 else:
     #  PRINT QR CODE HERE
-    os.system('rm auth.json')
+    os.system('rm auth.json && touch auth.json')
     print "Requesting token"
     os.system('curl -d "client_id=805034040388-3d7m4m13o75ar9heq5se3u2n60eib' +
               '9aq.apps.googleusercontent.com&scope=profile https://www.goog' +
@@ -69,16 +68,20 @@ else:
     unauthorized = True
     filename = 'tmp.json'
     while unauthorized:
-        r = open(filename)
-        jsonr = json.loads(r.read())
-        r.close()
-        os.system('rm tmp.json && curl -d "client_id=805034040388-3d7m4m' +
+        os.system('rm tmp.json && touch tmp.json')
+        os.system('curl -d "client_id=805034040388-3d7m4m' +
                   '13o75ar9heq5se3u2n60eib9aq.apps.googleusercontent.com' +
                   '&client_secret=cYpuaguhAvudT7JdYxHNW35p&code=' +
                   jsonf["device_code"]+'&grant_type=http://oauth.net/gra' +
                   'nt_type/device/1.0" https://www.googleapis.com/oauth2' +
                   '/v3/token >> tmp.json')
-        unauthorized = jsonr["error"]
+        r = open(filename)
+        jsonr = json.loads(r.read())
+        r.close()
+        try:
+              print str(jsonr["error"])
+        except:
+            unauthorized = False
         time.sleep(6)
 
 

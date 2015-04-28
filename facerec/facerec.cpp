@@ -155,7 +155,7 @@ extern "C" int predict(){
     lbp_cascade.load(fn_lbp);
     int averagePrediction[samplesToTake];
     int sampleCount = 0;
-    // for (int i = 0; i < samplesToTake-1; ++i){averagePrediction[i] = 0;}
+    for (int i = 0; i < samplesToTake-1; ++i){averagePrediction[i] = -1;}
     // Get a handle to the Video device:
     VideoCapture cap(deviceId);
     // Check if we can use this device at all:
@@ -192,8 +192,8 @@ extern "C" int predict(){
 	          model->predict(face_resized,prediction,confidence);
 
             if(i<samplesToTake-1){
-//                 averagePrediction[sampleCount] =prediction>3000?prediction:-1;
-                averagePrediction[sampleCount] =prediction;
+                averagePrediction[sampleCount] =confidence<100?prediction:-1;
+                //averagePrediction[sampleCount] =prediction;
                 sampleCount++;
             }else{
                 break;
