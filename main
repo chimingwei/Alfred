@@ -34,7 +34,7 @@ device = uinput.Device([
     uinput.KEY_Y,
     uinput.KEY_Z,
     ])
-
+os.system('xinput set-prop "eGalax Inc. USB TouchController" --type=float "Coordinate Transformation Matrix" 0.22694 0.00000 0.39971 0.00000 0.24479 0.72656 0.00000 0.00000 1.00000')
 recognizer = cdll.LoadLibrary('./librecog.so')
 recognizer.init()
 
@@ -67,6 +67,7 @@ else:
     f.close()
     unauthorized = True
     filename = 'tmp.json'
+    print str(jsonf["user_code"])
     while unauthorized:
         os.system('rm tmp.json && touch tmp.json')
         os.system('curl -d "client_id=805034040388-3d7m4m' +
@@ -84,38 +85,40 @@ else:
             unauthorized = False
         time.sleep(6)
 
-
 # GET USER INFO
 r = open(filename)
 jsonr = json.loads(r.read())
 r.close()
+os.system('rm caldata.json && touch caldata.json')
 os.system('curl -H "Authorization: Bearer ' + jsonr["access_token"] +
           '" https://www.googleapis.com/calendar/v3/calendars/primary/' +
           'events >> caldata.json')
+os.system('rm userdata.json && touch userdata.json')
 os.system('curl -H "Authorization: Bearer ' + jsonr["access_token"] +
-          '" https://www.googleapis.com/auth/plus.me ' +
+          '" https://www.googleapis.com/plus/v1/people/me ' +
           '>> userdata.json')
 u = open('userdata.json')
 userData = json.loads(u.read())
 u.close()
 if detectedUser == -1:
-    os.system('cp tmp.json ' + userData["familyname"] + '.'
-              + userData["givenName"] + '.json && rm tmp.json')
+    os.system('cp tmp.json '+userData["name"]["familyName"]+'.'
+              + userData["name"]["givenName"] + '.json && rm tmp.json')
     # rename file to username
-    recognizer.add_user(userData["familyName"]+'.'+userData["givenName"])
+    recognizer.add_user(str(userData["name"]["familyName"])+'.'+str(userData["name"]["givenName"]))
 
 
 device.emit_click(uinput.KEY_Z)  # Overlay on
 # ADD ARDUINO HOLD HERE
 distance = 10000
+ser = serial.Serial(port="/dev/ttyACM0", baudrate=115200)
+ser.open()
 while distance > 100:
-    ser = serial.Serial(port="/dev/ttyACM0", baudrate=115200)
-    ser.close()
-    ser.open()
     if ser.isOpen():
         arduinoInfo = ser.readline()
-        [distance, weatherInfo] = arduinoInfo.split(',') 
-    ser.close()
+        [distance,buttons,weatherInfo] = arduinoInfo.split(',') 
+        parseWeather(weatherInfo)
+        buttons.split()
+ser.close()
 
 device.emit_click(uinput.KEY_Y)
 os.system('rm data.json')

@@ -199,22 +199,22 @@ extern "C" int predict(){
                 break;
             }
             // printf("\n%d",prediction);
-             rectangle(original, face_i, CV_RGB(150,150,150), 1);
+//              rectangle(original, face_i, CV_RGB(150,150,150), 1);
 
             // // Create the text we will annotate the box with:
-            string box_text = format("User %d, %f", prediction,confidence);
+//             string box_text = format("User %d, %f", prediction,confidence);
 
             // // Calculate the position for annotated text (make sure we don't
             // // put illegal values in there):
-             int pos_x = std::max(face_i.tl().x - 10, 0);
-             int pos_y = std::max(face_i.tl().y - 10, 0);
+//              int pos_x = std::max(face_i.tl().x - 10, 0);
+//              int pos_y = std::max(face_i.tl().y - 10, 0);
 
             // // And now put it into the image:
-            putText(original, box_text, Point(pos_x, pos_y), FONT_HERSHEY_PLAIN, 1.0, CV_RGB(150,150,150), 2.0);
+//             putText(original, box_text, Point(pos_x, pos_y), FONT_HERSHEY_PLAIN, 1.0, CV_RGB(150,150,150), 2.0);
         }
         if(sampleCount>samplesToTake-1){break;}
         // Show the result:
-         imshow("face_recognizer", original);
+//          imshow("face_recognizer", original);
         // And display it:
         char key = (char) waitKey(20);
         // Exit this loop on escape:
